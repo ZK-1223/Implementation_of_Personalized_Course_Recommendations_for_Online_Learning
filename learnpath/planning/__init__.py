@@ -43,3 +43,41 @@
     def select_compromise(front: list[LearningPath],
                           weights: ObjectiveWeights) -> LearningPath   # TOPSIS
 """
+
+from __future__ import annotations
+
+from learnpath.planning.multiobjective import (
+    OBJECTIVE_KEYS,
+    LearnerContext,
+    ParetoSolution,
+    clamp01,
+    crowding_distance,
+    evaluate_objectives,
+    learner_context,
+    non_dominated_sort,
+    nsga2,
+    polynomial_mutation,
+    select_compromise,
+    simulated_binary_crossover,
+    topsis_scores,
+)
+from learnpath.planning.planner import LearningPath, PathPlanner, PathStep
+
+__all__ = [
+    "PathPlanner",
+    "LearningPath",
+    "PathStep",
+    "OBJECTIVE_KEYS",
+    "LearnerContext",
+    "ParetoSolution",
+    "clamp01",
+    "crowding_distance",
+    "evaluate_objectives",
+    "learner_context",
+    "non_dominated_sort",
+    "nsga2",
+    "polynomial_mutation",
+    "select_compromise",
+    "simulated_binary_crossover",
+    "topsis_scores",
+]

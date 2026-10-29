@@ -32,3 +32,9 @@
 
 触发逻辑由 :class:`learnpath.config.AdaptiveThresholds` 控制。
 """
+
+from __future__ import annotations
+
+from learnpath.adaptive.engine import AdaptationResult, AdaptiveEngine, FeedbackOutcome
+
+__all__ = ["AdaptiveEngine", "FeedbackOutcome", "AdaptationResult"]

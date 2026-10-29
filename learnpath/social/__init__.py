@@ -27,3 +27,9 @@
                               size: int = STUDY_GROUP_SIZE) -> list[StudyGroup]
         def peer_signal(self, model: LearnerModel, course: Course) -> float
 """
+
+from __future__ import annotations
+
+from learnpath.social.cohort import PeerMatch, SocialMatcher, StudyGroup
+
+__all__ = ["SocialMatcher", "PeerMatch", "StudyGroup"]

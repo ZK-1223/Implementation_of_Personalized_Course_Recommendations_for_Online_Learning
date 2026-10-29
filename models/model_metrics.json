@@ -1,0 +1,107 @@
+{
+  "generated_at": "2026-10-29T17:46:22",
+  "dataset": {
+    "n_learners": 720,
+    "n_courses": 560,
+    "n_interactions": 14000
+  },
+  "effect_model": {
+    "task": "course_completion",
+    "positive_rate": 0.4901,
+    "models": [
+      {
+        "name": "逻辑回归",
+        "auc": 0.8072,
+        "accuracy": 0.7332,
+        "f1": 0.7207,
+        "cv_mean": 0.8073,
+        "cv_std": 0.0061
+      },
+      {
+        "name": "梯度提升树",
+        "auc": 0.882,
+        "accuracy": 0.7973,
+        "f1": 0.7899,
+        "cv_mean": 0.8821,
+        "cv_std": 0.0062
+      }
+    ],
+    "best": "梯度提升树",
+    "features": [
+      {
+        "name": "hist_completion_rate",
+        "importance": 0.2547
+      },
+      {
+        "name": "learner_ability",
+        "importance": 0.1998
+      },
+      {
+        "name": "readiness",
+        "importance": 0.1024
+      },
+      {
+        "name": "level_gap",
+        "importance": 0.0785
+      },
+      {
+        "name": "hist_avg_quiz",
+        "importance": 0.0699
+      },
+      {
+        "name": "course_rating",
+        "importance": 0.0501
+      },
+      {
+        "name": "target_avg_mastery",
+        "importance": 0.0346
+      },
+      {
+        "name": "style_fit",
+        "importance": 0.0314
+      },
+      {
+        "name": "hist_log_count",
+        "importance": 0.0293
+      },
+      {
+        "name": "avg_mastery",
+        "importance": 0.0282
+      },
+      {
+        "name": "prereq_uncovered_ratio",
+        "importance": 0.017
+      },
+      {
+        "name": "time_fit",
+        "importance": 0.0162
+      }
+    ]
+  },
+  "gain_model": {
+    "task": "mastery_gain_regression",
+    "n_samples": 5866,
+    "best": "岭回归 Ridge",
+    "models": [
+      {
+        "name": "岭回归 Ridge",
+        "mae": 0.0579,
+        "rmse": 0.0724,
+        "r2": 0.6431
+      },
+      {
+        "name": "梯度提升树",
+        "mae": 0.0595,
+        "rmse": 0.0746,
+        "r2": 0.6205
+      }
+    ]
+  },
+  "notes": [
+    "完成概率采用 5 折分层交叉验证的折外预测统一计算 AUC / Accuracy / F1。",
+    "掌握度达成水平回归以 quiz_score 为主标签，用 5 折交叉验证折外预测计算 MAE / RMSE / R²；「掌握度增益」在推理期由 predict_gain 的解析式折算，不作为拟合标签。",
+    "所有特征均在「学习者尚未学过该课程」的时点计算：训练时按记录逐条屏蔽该课程的历史回放，杜绝标签泄漏。",
+    "刻意避免使用数据生成期的隐变量（latent ability / 生成概率等），仅采用线上可观测特征（画像能力、BKT 先修就绪度、难度差、历史完成率与测验分、课程口碑与热度、每周预算），以保证模型在真实系统中可部署、可解释。",
+    "风险等级阈值：p >= 0.70 低 / 0.40 ~ 0.70 中 / < 0.40 高。"
+  ]
+}

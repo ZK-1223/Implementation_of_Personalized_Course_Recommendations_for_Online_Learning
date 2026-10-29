@@ -1,0 +1,295 @@
+{
+  "generated_at": "2026-10-29T17:48:09",
+  "recommenders": [
+    {
+      "name": "Popularity 基线",
+      "precision_at_k": 0.0132,
+      "recall_at_k": 0.0622,
+      "ndcg_at_k": 0.0328,
+      "map": 0.0168,
+      "coverage": 0.0286,
+      "diversity": 0.9046,
+      "novelty": 0.8436,
+      "hit_rate": 0.1234
+    },
+    {
+      "name": "Content 内容推荐",
+      "precision_at_k": 0.0302,
+      "recall_at_k": 0.1495,
+      "ndcg_at_k": 0.0902,
+      "map": 0.0526,
+      "coverage": 0.2821,
+      "diversity": 0.8908,
+      "novelty": 0.9226,
+      "hit_rate": 0.2763
+    },
+    {
+      "name": "CF-SVD 协同过滤",
+      "precision_at_k": 0.0167,
+      "recall_at_k": 0.0847,
+      "ndcg_at_k": 0.0511,
+      "map": 0.0302,
+      "coverage": 0.4679,
+      "diversity": 0.9771,
+      "novelty": 0.9112,
+      "hit_rate": 0.1599
+    },
+    {
+      "name": "Hybrid 混合推荐（本系统）",
+      "precision_at_k": 0.0374,
+      "recall_at_k": 0.184,
+      "ndcg_at_k": 0.1026,
+      "map": 0.0571,
+      "coverage": 0.3768,
+      "diversity": 0.9694,
+      "novelty": 0.9308,
+      "hit_rate": 0.331
+    }
+  ],
+  "ablation": [
+    {
+      "variant": "完整混合推荐（基线）",
+      "ndcg_at_k": 0.1026,
+      "delta": 0.0,
+      "precision_at_k": 0.0374,
+      "recall_at_k": 0.184,
+      "diversity": 0.9694
+    },
+    {
+      "variant": "去掉知识图谱先修约束",
+      "ndcg_at_k": 0.0639,
+      "delta": -0.0387,
+      "precision_at_k": 0.0198,
+      "recall_at_k": 0.0965,
+      "diversity": 0.9943
+    },
+    {
+      "variant": "去掉 MMR 多样性重排",
+      "ndcg_at_k": 0.1084,
+      "delta": 0.0058,
+      "precision_at_k": 0.0391,
+      "recall_at_k": 0.1987,
+      "diversity": 0.9041
+    },
+    {
+      "variant": "去掉协同过滤信号",
+      "ndcg_at_k": 0.1075,
+      "delta": 0.0048,
+      "precision_at_k": 0.0381,
+      "recall_at_k": 0.1872,
+      "diversity": 0.959
+    },
+    {
+      "variant": "去掉社交同伴信号",
+      "ndcg_at_k": 0.1013,
+      "delta": -0.0013,
+      "precision_at_k": 0.0372,
+      "recall_at_k": 0.1833,
+      "diversity": 0.9695
+    }
+  ],
+  "notes": [
+    "离线评测采用留一/留出混合协议：先按学习者分组，再随机抽取每位学习者 20% 的正反馈（completed=True 或 progress>=0.8）作为测试集，训练集保留剩余交互（共 12528 条），严格避免测试项泄漏。",
+    "候选集为训练集中未与该学习者交互过的课程，截断长度 K=10；共评测 713 位学习者、1472 条测试正反馈。",
+    "NDCG@K 采用二元相关性（命中即 1），IDCG 按 min(|R|, K) 计算，因此 Recall@K < 1 时 NDCG@K 仍可反映排序质量。",
+    "Diversity 用列表内平均两两不相似度（1 - 余弦相似度），与混合推荐 MMR 的相似度口径一致；Novelty 为 -log2(训练集流行度) 的均值并按 log2(|C|) 归一，越大代表越偏冷门。",
+    "所有随机过程（测试集切分、SVD 初始化）均使用固定种子，结果可复现。"
+  ],
+  "effect_model": {
+    "task": "course_completion",
+    "positive_rate": 0.4901,
+    "models": [
+      {
+        "name": "逻辑回归",
+        "auc": 0.8072,
+        "accuracy": 0.7332,
+        "f1": 0.7207,
+        "cv_mean": 0.8073,
+        "cv_std": 0.0061
+      },
+      {
+        "name": "梯度提升树",
+        "auc": 0.882,
+        "accuracy": 0.7973,
+        "f1": 0.7899,
+        "cv_mean": 0.8821,
+        "cv_std": 0.0062
+      }
+    ],
+    "best": "梯度提升树",
+    "features": [
+      {
+        "name": "hist_completion_rate",
+        "importance": 0.2547
+      },
+      {
+        "name": "learner_ability",
+        "importance": 0.1998
+      },
+      {
+        "name": "readiness",
+        "importance": 0.1024
+      },
+      {
+        "name": "level_gap",
+        "importance": 0.0785
+      },
+      {
+        "name": "hist_avg_quiz",
+        "importance": 0.0699
+      },
+      {
+        "name": "course_rating",
+        "importance": 0.0501
+      },
+      {
+        "name": "target_avg_mastery",
+        "importance": 0.0346
+      },
+      {
+        "name": "style_fit",
+        "importance": 0.0314
+      },
+      {
+        "name": "hist_log_count",
+        "importance": 0.0293
+      },
+      {
+        "name": "avg_mastery",
+        "importance": 0.0282
+      },
+      {
+        "name": "prereq_uncovered_ratio",
+        "importance": 0.017
+      },
+      {
+        "name": "time_fit",
+        "importance": 0.0162
+      }
+    ]
+  },
+  "gain_model": {
+    "task": "mastery_gain_regression",
+    "n_samples": 5866,
+    "best": "岭回归 Ridge",
+    "models": [
+      {
+        "name": "岭回归 Ridge",
+        "mae": 0.0579,
+        "rmse": 0.0724,
+        "r2": 0.6431
+      },
+      {
+        "name": "梯度提升树",
+        "mae": 0.0595,
+        "rmse": 0.0746,
+        "r2": 0.6205
+      }
+    ]
+  },
+  "path_planning": {
+    "n_learners": 12,
+    "plan_seconds": {
+      "mean": 2.205,
+      "max": 5.018,
+      "per_preset": 0.735
+    },
+    "pareto_front_size": {
+      "mean": 17.4,
+      "max": 35
+    },
+    "presets": {
+      "balanced": {
+        "name": "均衡方案",
+        "mean_hours": 129.9,
+        "mean_total_gain": 7.042,
+        "mean_weeks": 15.0,
+        "mean_steps": 13.5,
+        "mean_objective_gain": 0.9,
+        "mean_objective_time": 0.509
+      },
+      "fast": {
+        "name": "速通方案",
+        "mean_hours": 126.4,
+        "mean_total_gain": 6.503,
+        "mean_weeks": 14.5,
+        "mean_steps": 13.0,
+        "mean_objective_gain": 0.801,
+        "mean_objective_time": 0.522
+      },
+      "thorough": {
+        "name": "夯实方案",
+        "mean_hours": 130.3,
+        "mean_total_gain": 7.181,
+        "mean_weeks": 15.0,
+        "mean_steps": 13.8,
+        "mean_objective_gain": 0.911,
+        "mean_objective_time": 0.508
+      }
+    },
+    "fast_lt_balanced_lt_thorough_hours": 0.833,
+    "presets_distinct_rate": 0.833,
+    "gap_coverage_mean": 0.445,
+    "feasibility_mean": 0.722,
+    "target_plan_seconds": 3.0,
+    "pass_performance": true
+  },
+  "adaptive": {
+    "n_learners": 12,
+    "low_score_trigger_rate": 0.75,
+    "high_score_trigger_rate": 1.0,
+    "replanned_rate": 1.0,
+    "mean_actions": 3.75,
+    "thresholds": {
+      "low_quiz_score": 0.6,
+      "high_quiz_score": 0.9,
+      "behind_schedule": 0.7,
+      "ahead_schedule": 1.3
+    }
+  },
+  "social": {
+    "n_learners": 12,
+    "mean_peers": 6.0,
+    "mean_similarity": 0.805,
+    "mean_groups": 2.9,
+    "mean_synergy": 0.786,
+    "mean_peer_signal": 0.887
+  },
+  "dashboard": {
+    "n_learners": 12,
+    "complete_rate": 1.0,
+    "mastery_curve_monotone_rate": 1.0,
+    "mean_risk_courses": 4.83,
+    "required_keys": [
+      "kpi",
+      "mastery_curve",
+      "domain_radar",
+      "difficulty_distribution",
+      "modality_mix",
+      "time_allocation",
+      "completion_forecast",
+      "gap_table",
+      "history_activity"
+    ]
+  },
+  "dataset": {
+    "n_knowledge_points": 420,
+    "n_kp_edges": 483,
+    "n_courses": 560,
+    "n_learners": 720,
+    "n_goals": 8,
+    "n_interactions": 14000,
+    "n_completed": 6862,
+    "completion_rate": 0.4901,
+    "domains": [
+      "产品与职场",
+      "前端与设计",
+      "数学基础",
+      "数据与人工智能",
+      "编程开发",
+      "网络与安全",
+      "语言学习"
+    ]
+  },
+  "elapsed_seconds": 80.7
+}

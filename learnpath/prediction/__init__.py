@@ -35,3 +35,29 @@
 掌握度增益用回归模型；指标写入 ``models/model_metrics.json``（入库），
 二进制约文件写入 ``models/*.joblib``（不入库，可复现）。
 """
+
+from __future__ import annotations
+
+from learnpath.prediction.effect import (
+    CompletionPrediction,
+    EffectPredictor,
+    GainPrediction,
+    risk_level_of,
+)
+from learnpath.prediction.features import (
+    FEATURE_LABELS,
+    FEATURE_NAMES,
+    build_features,
+    feature_vector,
+)
+
+__all__ = [
+    "EffectPredictor",
+    "CompletionPrediction",
+    "GainPrediction",
+    "risk_level_of",
+    "build_features",
+    "feature_vector",
+    "FEATURE_NAMES",
+    "FEATURE_LABELS",
+]
