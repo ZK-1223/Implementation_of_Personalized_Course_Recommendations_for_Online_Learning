@@ -37,3 +37,23 @@
                           effort_ratio: float) -> dict[str, float]
         def snapshot(self) -> ProfileSnapshot
 """
+
+from __future__ import annotations
+
+from learnpath.learner.bkt import MasteryTracker
+from learnpath.learner.profile import (
+    LearnerModel,
+    ProfileSnapshot,
+    cached_course_prerequisites,
+    interactions_by_learner,
+    sigmoid,
+)
+
+__all__ = [
+    "MasteryTracker",
+    "LearnerModel",
+    "ProfileSnapshot",
+    "cached_course_prerequisites",
+    "interactions_by_learner",
+    "sigmoid",
+]

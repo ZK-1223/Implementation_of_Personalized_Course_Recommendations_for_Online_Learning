@@ -33,3 +33,27 @@
 
 模块还应提供 ``mmr_rerank`` 以保证推荐多样性（参数见 :data:`learnpath.config.MMR_LAMBDA`）。
 """
+
+from __future__ import annotations
+
+from learnpath.recommend.collaborative import CollaborativeRecommender
+from learnpath.recommend.content import ContentRecommender
+from learnpath.recommend.hybrid import (
+    COMPONENT_KEYS,
+    HybridRecommender,
+    Recommendation,
+    build_course_features,
+    course_similarity,
+    mmr_rerank,
+)
+
+__all__ = [
+    "ContentRecommender",
+    "CollaborativeRecommender",
+    "HybridRecommender",
+    "Recommendation",
+    "mmr_rerank",
+    "course_similarity",
+    "build_course_features",
+    "COMPONENT_KEYS",
+]
