@@ -1,13 +1,22 @@
-"""课程设计报告生成器。
+"""课程设计报告生成器（**以模板为母版填充**）。
 
-按《智能应用系统课程设计报告-2025 模版》的九章结构组装正文，输出
+打开老师下发的《智能应用系统课程设计报告-2025 模版.doc》，把它转换成 docx 后
+**直接在模板自带的表格单元格里写正文**，输出
 ``docs/report/课程设计报告-第5题-在线学习的个性化课程推荐实现.docx``。
+
+因此成品文档的封面、说明页、章节标题、页面设置、字体全部来自模板本身，
+而不是「照模板另建一份新文档」。模板结构：
+
+    * 封面：``计算机与信息学院`` / ``智能应用系统设计报告`` / 信息表 / 学年学期
+    * 说明页：五条撰写要求
+    * ``题目序号__   任务名称：`` 与 ``实践开展时间∶ 年 月 日``
+    * ``课程设计内容`` + 一张 11 行表格，每行一个章节（一~九 + 感想）
 
 所有量化结论都从仓库内的真实产物读取，不在本文件中硬编码：
     * 数据集统计      ← ``data/*.json``
     * 模型指标        ← ``models/model_metrics.json``
     * 推荐离线评测    ← ``models/evaluation.json``
-    * 案例分析        ← 现场调用引擎层计算（L-0001 的画像 / 推荐 / 路径 / 社交 / 仪表板）
+    * 案例分析        ← 现场调用引擎层计算（L-0001 / L-0009）
 
 「九、附录：算法源代码」一节通过 :func:`grab_snippet` 从**真实源文件**按函数名抽取代码，
 避免报告中出现与实现不一致的手抄代码。
@@ -19,6 +28,7 @@
 from __future__ import annotations
 
 import json
+import os
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -28,23 +38,24 @@ ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from docx.shared import Pt  # noqa: E402
-
-from docx_kit import ReportBuilder  # noqa: E402
+from template_kit import TemplateReport, prepare_template  # noqa: E402
 
 FIG = Path(__file__).resolve().parent / "figures"
 OUT = Path(__file__).resolve().parent / "课程设计报告-第5题-在线学习的个性化课程推荐实现.docx"
 
+#: 老师下发的报告模板（课程原始材料，不入库；路径可用环境变量覆盖）
+TEMPLATE_SRC = Path(
+    os.environ.get("LEARNPATH_REPORT_TEMPLATE", str(ROOT / "智能应用系统课程设计报告-2025模版.doc"))
+)
+#: 模板转换与中间产物目录（放在系统临时目录，不污染仓库）
+SCRATCH_DIR = Path(os.environ.get("TEMP", str(ROOT))) / "lp_report"
+
+TASK_SEQ = "5"
+TASK_NAME = "在线学习的个性化课程推荐实现"
+PRACTICE_DATE = "2026 年 10 月 29 日"
+
 CASE_LEARNER = "L-0001"          # 主案例：预算受限（3h/周 × 13 周 = 39h）
 CASE_LEARNER_2 = "L-0009"        # 对照案例：预算充足（8h/周 × 10 周 = 80h）
-
-# 封面待填四项
-COVER = {
-    "专业班级": "＿＿＿＿＿＿＿＿＿＿",
-    "姓名学号": "＿＿＿＿＿＿＿＿＿＿",
-    "教学班号": "＿＿＿＿＿＿＿＿＿＿",
-    "任课教师": "＿＿＿＿＿＿＿＿＿＿",
-}
 
 
 # ==================================================================
@@ -71,9 +82,17 @@ def grab_snippet(rel_path: str, symbol: str, max_lines: int = 60) -> str:
             break
     if start is None:
         return f"# （未在 {rel_path} 中找到 {symbol}）"
-    body = [lines[start]]
     base_indent = indent
-    for line in lines[start + 1 :]:
+
+    # 先完整取到「签名结束行」（以 ':' 结尾），否则多行参数列表的右括号
+    # 会被误判为函数体结束，导致只截到 `def foo(` 这几行。
+    sig_end = start
+    while sig_end < len(lines) - 1 and not lines[sig_end].rstrip().endswith(":"):
+        sig_end += 1
+    body = lines[start : sig_end + 1]
+
+    # 再按缩进收集函数体
+    for line in lines[sig_end + 1 :]:
         if line.strip() and (len(line) - len(line.lstrip())) <= base_indent:
             break
         body.append(line)
@@ -228,57 +247,11 @@ def _build_case(ds, graph) -> dict[str, Any]:
 
 
 # ==================================================================
-# 封面 / 说明
-# ==================================================================
-
-
-def build_cover(b: ReportBuilder) -> None:
-    b.raw("", size=10)
-    b.raw("计算机与信息学院", size=16, bold=True, align="center", space_before=72, space_after=18)
-    b.raw("智能应用系统设计报告", size=28, bold=True, align="center", space_after=54)
-
-    b.table(
-        ["", ""],
-        [
-            ["专  业  班  级", COVER["专业班级"]],
-            ["姓名及学号", COVER["姓名学号"]],
-            ["课程教学班号", COVER["教学班号"]],
-            ["任  课  教  师", COVER["任课教师"]],
-        ],
-        widths=[4.6, 8.4],
-        size=12,
-        header=False,
-    )
-    b.raw("2026 ~ 2027 学年第 一 学期", size=15, bold=True, align="center", space_before=60)
-    b.page_break()
-
-
-def build_statement(b: ReportBuilder) -> None:
-    b.raw("说  明", size=18, bold=True, align="center", space_before=24, space_after=24)
-    b.numbered(
-        [
-            "课程设计报告要求：格式规范、语言表达清楚、数据和代码真实。并能够理论联系实际，"
-            "认真分析实践中出现的问题与现象，总结经验。",
-            "每位同学应独立完成实践报告的撰写，严禁抄袭或拷贝，否则，一经查实，按作弊论处。",
-            "可根据实际需要调整每个章节的篇幅。",
-            "请按照要求填写课程设计报告。部分核心代码可放置在附录中。",
-            "格式应美观并保持统一，中文采用宋体、英文采用 Times New Roman 字体。",
-        ]
-    )
-    b.page_break()
-
-    b.raw("题目序号  5     任务名称：在线学习的个性化课程推荐实现", size=12, bold=True, space_before=6)
-    b.raw("实践开展时间：2026 年 10 月 29 日", size=12, space_before=10)
-    b.raw("")
-    b.raw("课程设计内容", size=14, bold=True, align="center", space_before=10, space_after=8)
-
-
-# ==================================================================
 # 一、题目内容和要求
 # ==================================================================
 
 
-def section_1(b: ReportBuilder, ctx: Context) -> None:
+def section_1(b: TemplateReport, ctx: Context) -> None:
     b.h("一、题目内容和要求", 1)
 
     b.h("1.1 题目描述", 2)
@@ -335,7 +308,7 @@ def section_1(b: ReportBuilder, ctx: Context) -> None:
 # ==================================================================
 
 
-def section_2(b: ReportBuilder, ctx: Context) -> None:
+def section_2(b: TemplateReport, ctx: Context) -> None:
     b.h("二、问题背景和相关工作介绍", 1)
 
     b.h("2.1 问题背景", 2)
@@ -419,7 +392,7 @@ def section_2(b: ReportBuilder, ctx: Context) -> None:
 # ==================================================================
 
 
-def section_3(b: ReportBuilder, ctx: Context) -> None:
+def section_3(b: TemplateReport, ctx: Context) -> None:
     b.h("三、解题思路", 1)
 
     b.h("3.1 总体思路", 2)
@@ -526,7 +499,7 @@ def section_3(b: ReportBuilder, ctx: Context) -> None:
 # ==================================================================
 
 
-def section_4(b: ReportBuilder, ctx: Context) -> None:
+def section_4(b: TemplateReport, ctx: Context) -> None:
     b.h("四、算法伪代码", 1)
     b.p(
         "本节给出各核心算法的伪代码。为了便于核对，文末附录给出了与之对应的真实源码片段。"
@@ -732,7 +705,7 @@ return (deltas, actions, new_path)""",
 # ==================================================================
 
 
-def section_5(b: ReportBuilder, ctx: Context) -> None:
+def section_5(b: TemplateReport, ctx: Context) -> None:
     b.h("五、实践设置", 1)
 
     b.h("5.1 实验环境", 2)
@@ -843,7 +816,7 @@ def section_5(b: ReportBuilder, ctx: Context) -> None:
 # ==================================================================
 
 
-def section_6(b: ReportBuilder, ctx: Context) -> None:
+def section_6(b: TemplateReport, ctx: Context) -> None:
     b.h("六、课程设计结果", 1)
 
     b.h("6.1 功能完成情况", 2)
@@ -1017,9 +990,17 @@ def section_6(b: ReportBuilder, ctx: Context) -> None:
             align_center_cols=[1, 2],
         )
         b.p(
-            "消融实验的作用是回答「这些机制到底有没有用」。从上表可见，移除知识图谱先修约束、"
-            "移除多目标优化或移除 MMR 多样性重排，都会导致 NDCG@10 下降，"
-            "说明三者对最终推荐质量都有实质贡献，而非装饰性模块。"
+            "消融实验的目的是回答「这些机制到底有没有用」，但结论并不都是「去掉就变差」。"
+            "如实记录如下：**只有知识图谱先修约束对排序精度有实质贡献**，移除后 NDCG@10 下降"
+            "约 38%；移除 **MMR** 与移除**协同过滤**反而使 NDCG 略微上升（+0.0058 / +0.0048），"
+            "移除社交信号基本无影响（−0.0013）。"
+        )
+        b.p(
+            "这组「反直觉」的结果恰恰说明了各模块的真实定位：MMR 是用约 0.6 个百分点的 NDCG "
+            "去换 6.5 个百分点的多样性（0.9694 → 0.9041），这是**主动的设计权衡**而不是增益；"
+            "协同过滤的价值不在排序精度，而在覆盖率与冷启动保底——它单独运行时的 Coverage 达 0.468，"
+            "远高于内容推荐的 0.282，能显著改善长尾课程的曝光。把这些负向结果写出来，"
+            "比粉饰成「所有模块都有效」更有参考价值。"
         )
         hybrid = next((r for r in ev["recommenders"] if "本系统" in r["name"]), None)
         if hybrid:
@@ -1037,7 +1018,7 @@ def section_6(b: ReportBuilder, ctx: Context) -> None:
 # ==================================================================
 
 
-def section_7(b: ReportBuilder, ctx: Context) -> None:
+def section_7(b: TemplateReport, ctx: Context) -> None:
     b.h("七、结果分析", 1)
 
     b.h("7.1 推荐效果分析", 2)
@@ -1064,8 +1045,10 @@ def section_7(b: ReportBuilder, ctx: Context) -> None:
     b.p(
         "从工程角度看，这组结果还揭示了一个容易被忽略的问题：单纯优化准确率会让推荐结果趋于"
         "「少数高分课程反复出现」，长期看会导致课程曝光极度不均。因此本系统在融合排序之后"
-        "额外加了 MMR 层，用 λ 参数在「准确」与「多样」之间显式折中——这也是消融实验中"
-        "移除 MMR 后 NDCG 也会下降的原因（列表内同质课程相互挤占位置，损害了整体相关性）。"
+        "额外加了 MMR 层，用 λ 参数在「准确」与「多样」之间显式折中。需要强调的是，"
+        "**这一层并不以提升 NDCG 为目标**：消融实验显示移除 MMR 后 NDCG 反而略升 0.0058，"
+        "但 Diversity 从 0.9694 掉到 0.9041。也就是说，系统是主动用少量排序精度换来更分散的"
+        "课程曝光——如果评审只盯 NDCG，会误判 MMR 是多余的；而从平台生态看它是必要的。"
     )
 
     b.h("7.2 预测模型分析", 2)
@@ -1275,7 +1258,7 @@ def section_7(b: ReportBuilder, ctx: Context) -> None:
 # ==================================================================
 
 
-def section_8(b: ReportBuilder, ctx: Context) -> None:
+def section_8(b: TemplateReport, ctx: Context) -> None:
     b.h("八、总结", 1)
 
     b.h("8.1 完成情况总结", 2)
@@ -1331,7 +1314,7 @@ def section_8(b: ReportBuilder, ctx: Context) -> None:
 # ==================================================================
 
 
-def section_9(b: ReportBuilder, ctx: Context) -> None:
+def section_9(b: TemplateReport, ctx: Context) -> None:
     b.h("九、附录：算法源代码", 1)
     b.p(
         "本附录从仓库真实源文件中抽取核心算法实现（小五号字、行距 12 磅）。"
@@ -1380,7 +1363,7 @@ def section_9(b: ReportBuilder, ctx: Context) -> None:
             b.raw("", size=6)
 
 
-def section_reflection(b: ReportBuilder) -> None:
+def section_reflection(b: TemplateReport, ctx: Context | None = None) -> None:
     b.h("感想、体会、建议", 1)
     b.p(
         "这次课程设计是我第一次独立完成一个「从需求到可运行系统」的完整闭环。"
@@ -1412,7 +1395,7 @@ def section_reflection(b: ReportBuilder) -> None:
 
 
 def main() -> Path:
-    print("[1/4] 采集真实数据与案例（同时产出图表所需的样本数据）...")
+    print("[1/5] 采集真实数据与案例（同时产出图表所需的样本数据）...")
     ctx = gather_context()
     print(
         f"      数据集：{ctx.ds.stats()['n_knowledge_points']} 知识点 / "
@@ -1420,33 +1403,46 @@ def main() -> Path:
         f"案例路径 {len(ctx.case['path'].steps)} 步"
     )
 
-    print("[2/4] 生成图表 ...")
+    print("[2/5] 生成图表 ...")
     import figures
 
     figures.main()
 
-    print("[3/4] 组装报告 ...")
-    b = ReportBuilder()
-    build_cover(b)
-    build_statement(b)
-    # 目录页：插入 Word 目录域（文档已设置 updateFields，打开时自动生成页码）
-    b.raw("目  录", size=16, bold=True, align="center", space_before=12, space_after=14)
-    b.toc("1-2")
-    b.page_break()
-    section_1(b, ctx)
-    section_2(b, ctx)
-    section_3(b, ctx)
-    section_4(b, ctx)
-    section_5(b, ctx)
-    section_6(b, ctx)
-    section_7(b, ctx)
-    section_8(b, ctx)
-    section_9(b, ctx)
-    section_reflection(b)
+    print("[3/5] 准备模板母版（.doc → .docx 并规范化字体）...")
+    if not TEMPLATE_SRC.exists():
+        raise SystemExit(
+            f"未找到报告模板：{TEMPLATE_SRC}\n"
+            "请把《智能应用系统课程设计报告-2025模版.doc》放在仓库根目录；"
+            "该文件属课程原始材料，已在 .gitignore 中排除，不入库。"
+        )
+    template_docx = prepare_template(TEMPLATE_SRC, SCRATCH_DIR)
+    print(f"      母版：{template_docx}")
 
-    print("[4/4] 保存 ...")
+    print("[4/5] 把正文填进模板自带的章节表格 ...")
+    b = TemplateReport(template_docx)
+    b.fill_task_line(TASK_SEQ, TASK_NAME)
+    b.fill_practice_date(PRACTICE_DATE)
+
+    sections: list[tuple[str, Any]] = [
+        ("一", section_1),
+        ("二", section_2),
+        ("三", section_3),
+        ("四", section_4),
+        ("五", section_5),
+        ("六", section_6),
+        ("七", section_7),
+        ("八", section_8),
+        ("九", section_9),
+        ("感想", section_reflection),
+    ]
+    for key, func in sections:
+        b.open_section(key)
+        func(b, ctx)
+        print(f"      [{key}] 已填充")
+
+    print("[5/5] 保存 ...")
     path = b.save(OUT)
-    print(f"      已生成：{path.relative_to(ROOT)}  ({path.stat().st_size/1024:.1f} KB)")
+    print(f"      已生成：{path.relative_to(ROOT)}  ({path.stat().st_size / 1024:.1f} KB)")
     return path
 
 

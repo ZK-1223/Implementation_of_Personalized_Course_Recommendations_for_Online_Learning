@@ -427,11 +427,18 @@ Top-5 特征重要性：`hist_completion_rate` 0.255、`learner_ability` 0.200�
 
 | 交付物 | 位置 |
 |---|---|
-| 课程设计报告（Word） | [docs/report/](docs/report/) |
+| 课程设计报告（Word，**直接填进老师模板**） | [docs/report/](docs/report/) |
 | 工程答辩 PPT | [docs/slides/](docs/slides/) |
+| 报告/PPT 的可复现生成脚本 | [docs/report/build_report.py](docs/report/build_report.py) · [docs/slides/build_slides.py](docs/slides/build_slides.py) |
 | 实现要求对照表 | [docs/REQUIREMENTS_MATRIX.md](docs/REQUIREMENTS_MATRIX.md) |
 | 接口契约 | [docs/API.md](docs/API.md) |
 | 系统架构说明 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) |
+
+> **关于报告**：`docs/report/build_report.py` 不是「另建一份文档」，而是把老师下发的
+> 《智能应用系统课程设计报告-2025模版.doc》转成 docx 后，**在模板自带的表格单元格里逐节填入正文**。
+> 因此成品保留模板原有的封面、校徽、说明页、`题目序号/任务名称` 行、`课程设计内容` 表格结构、
+> 页面设置与宋体/Times New Roman 字体规范。该 `.doc` 模板属课程原始材料，已在 `.gitignore` 中排除，
+> 运行脚本前需自行放回仓库根目录（或通过 `LEARNPATH_REPORT_TEMPLATE` 环境变量指定路径）。
 
 ---
 
