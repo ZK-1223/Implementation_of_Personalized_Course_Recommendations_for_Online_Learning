@@ -1,0 +1,19 @@
+# LearnPath 运行依赖
+# 安装：python -m pip install -r requirements.txt
+#
+# 本项目刻意保持轻量：核心算法只用 numpy，无 GPU / 无深度学习框架依赖，
+# 保证在普通笔记本上即可完整复现（详见 README「环境要求」）。
+
+# ---- Web 服务 ----
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+
+# ---- 数据处理与机器学习 ----
+numpy>=2.0
+pandas>=2.2
+scikit-learn>=1.5
+
+# ---- 测试 ----
+pytest>=8.0
+httpx>=0.27

@@ -1,0 +1,79 @@
+# ============================================================
+# LearnPath · 智学路径 —— 个性化学习路径推荐系统
+# 忽略规则：
+#   1) 仅排除「课程课题原始材料」（选题清单 PDF / 报告模板 DOC / 文本提取件）
+#   2) 报告、PPT 等交付物属于项目内容，正常纳入版本控制
+# ============================================================
+
+# ---------- 1. 课程课题原始材料（老师下发的文件，不属于本项目内容）----------
+智能应用系统课程设计2026-发布.pdf
+智能应用系统课程设计报告-2025模版.doc
+pdf_text.txt
+template_text.txt
+
+# ---------- 2. Office / 编辑器临时锁文件 ----------
+~$*
+.~lock.*#
+*.tmp
+*.bak
+
+# ---------- 3. Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ---------- 4. 虚拟环境 ----------
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ---------- 5. 测试与覆盖率 ----------
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+
+# ---------- 6. 类型检查 / 代码质量缓存 ----------
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+
+# ---------- 7. 运行时产物 ----------
+*.log
+logs/
+runtime/
+.cache/
+# 训练得到的二进制模型与缓存（可复现，不入库；模型指标与说明会入库）
+models/*.joblib
+models/*.pkl
+data/cache/
+
+# ---------- 8. IDE / 操作系统 ----------
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
