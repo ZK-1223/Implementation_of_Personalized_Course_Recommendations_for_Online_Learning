@@ -1,0 +1,146 @@
+{
+ "points": [
+  {
+   "id": "p1",
+   "hours": 25.8,
+   "gain": 1.9044,
+   "smoothness": 0.9375,
+   "fit": 0.2943,
+   "n_courses": 3,
+   "is_selected": false,
+   "preset": "fast"
+  },
+  {
+   "id": "p2",
+   "hours": 30.2,
+   "gain": 2.3127,
+   "smoothness": 0.9375,
+   "fit": 0.2894,
+   "n_courses": 3,
+   "is_selected": false,
+   "preset": ""
+  },
+  {
+   "id": "p3",
+   "hours": 32.3,
+   "gain": 3.0588,
+   "smoothness": 0.8958,
+   "fit": 0.4339,
+   "n_courses": 4,
+   "is_selected": false,
+   "preset": ""
+  },
+  {
+   "id": "p4",
+   "hours": 33.9,
+   "gain": 2.8397,
+   "smoothness": 0.9688,
+   "fit": 0.5102,
+   "n_courses": 5,
+   "is_selected": false,
+   "preset": ""
+  },
+  {
+   "id": "p5",
+   "hours": 35.1,
+   "gain": 3.0123,
+   "smoothness": 0.9844,
+   "fit": 0.4543,
+   "n_courses": 5,
+   "is_selected": true,
+   "preset": "balanced"
+  },
+  {
+   "id": "p6",
+   "hours": 35.7,
+   "gain": 2.6055,
+   "smoothness": 0.9844,
+   "fit": 0.5187,
+   "n_courses": 5,
+   "is_selected": false,
+   "preset": ""
+  },
+  {
+   "id": "p7",
+   "hours": 36.1,
+   "gain": 2.961,
+   "smoothness": 0.9688,
+   "fit": 0.4832,
+   "n_courses": 5,
+   "is_selected": false,
+   "preset": ""
+  },
+  {
+   "id": "p8",
+   "hours": 36.3,
+   "gain": 3.2624,
+   "smoothness": 0.9688,
+   "fit": 0.5044,
+   "n_courses": 5,
+   "is_selected": false,
+   "preset": ""
+  },
+  {
+   "id": "p9",
+   "hours": 36.5,
+   "gain": 3.0326,
+   "smoothness": 0.9844,
+   "fit": 0.4269,
+   "n_courses": 5,
+   "is_selected": false,
+   "preset": ""
+  },
+  {
+   "id": "p10",
+   "hours": 36.5,
+   "gain": 2.8319,
+   "smoothness": 0.9688,
+   "fit": 0.5269,
+   "n_courses": 5,
+   "is_selected": false,
+   "preset": ""
+  },
+  {
+   "id": "p11",
+   "hours": 36.6,
+   "gain": 3.7088,
+   "smoothness": 0.9844,
+   "fit": 0.4632,
+   "n_courses": 5,
+   "is_selected": false,
+   "preset": ""
+  },
+  {
+   "id": "p12",
+   "hours": 37.3,
+   "gain": 3.3085,
+   "smoothness": 0.9875,
+   "fit": 0.4714,
+   "n_courses": 6,
+   "is_selected": false,
+   "preset": ""
+  },
+  {
+   "id": "p13",
+   "hours": 37.7,
+   "gain": 3.3304,
+   "smoothness": 0.9875,
+   "fit": 0.4961,
+   "n_courses": 6,
+   "is_selected": false,
+   "preset": ""
+  },
+  {
+   "id": "p14",
+   "hours": 37.9,
+   "gain": 3.511,
+   "smoothness": 0.9875,
+   "fit": 0.5727,
+   "n_courses": 6,
+   "is_selected": false,
+   "preset": ""
+  }
+ ],
+ "selected_index": 4,
+ "n_front": 14
+}

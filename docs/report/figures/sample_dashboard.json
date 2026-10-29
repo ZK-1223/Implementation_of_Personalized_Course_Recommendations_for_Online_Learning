@@ -1,0 +1,106 @@
+{
+ "mastery_curve": [
+  {
+   "week": 0,
+   "avg_mastery": 0.427,
+   "mastered": 1
+  },
+  {
+   "week": 1,
+   "avg_mastery": 0.446,
+   "mastered": 1
+  },
+  {
+   "week": 2,
+   "avg_mastery": 0.456,
+   "mastered": 1
+  },
+  {
+   "week": 3,
+   "avg_mastery": 0.456,
+   "mastered": 1
+  },
+  {
+   "week": 4,
+   "avg_mastery": 0.466,
+   "mastered": 1
+  },
+  {
+   "week": 5,
+   "avg_mastery": 0.466,
+   "mastered": 1
+  },
+  {
+   "week": 6,
+   "avg_mastery": 0.466,
+   "mastered": 1
+  },
+  {
+   "week": 7,
+   "avg_mastery": 0.479,
+   "mastered": 1
+  },
+  {
+   "week": 8,
+   "avg_mastery": 0.479,
+   "mastered": 1
+  },
+  {
+   "week": 9,
+   "avg_mastery": 0.479,
+   "mastered": 1
+  },
+  {
+   "week": 10,
+   "avg_mastery": 0.492,
+   "mastered": 1
+  },
+  {
+   "week": 11,
+   "avg_mastery": 0.492,
+   "mastered": 1
+  },
+  {
+   "week": 12,
+   "avg_mastery": 0.492,
+   "mastered": 1
+  }
+ ],
+ "domain_radar": [
+  {
+   "domain": "编程开发",
+   "mastery": 0.161,
+   "target": 0.82
+  },
+  {
+   "domain": "数据与人工智能",
+   "mastery": 0.272,
+   "target": 0.82
+  },
+  {
+   "domain": "前端与设计",
+   "mastery": 0.127,
+   "target": 0.82
+  },
+  {
+   "domain": "网络与安全",
+   "mastery": 0.127,
+   "target": 0.82
+  },
+  {
+   "domain": "产品与职场",
+   "mastery": 0.175,
+   "target": 0.82
+  },
+  {
+   "domain": "语言学习",
+   "mastery": 0.158,
+   "target": 0.82
+  },
+  {
+   "domain": "数学基础",
+   "mastery": 0.25,
+   "target": 0.82
+  }
+ ]
+}
