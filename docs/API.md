@@ -161,6 +161,20 @@
   "total_gain": 2.84,
   "feasibility": 0.93,
   "objectives": {"gain": 0.71, "time": 0.66, "smoothness": 0.82, "fit": 0.75},
+
+  "budget_hours": 96.0,
+  "over_budget": false,
+  "coverage_ratio": 1.0,
+  "covered_target_kp_ids": ["KP-02-01", "KP-02-03"],
+  "covered_target_kp_names": ["数据清洗", "假设检验"],
+  "uncovered_target_kp_ids": [],
+  "uncovered_target_kp_names": [],
+  "coverage": {
+    "target_gap_ratio": 0.0, "gap_ratio": 0.12,
+    "budget_utilisation": 0.65, "weeks_needed": 11,
+    "deadline_weeks": 12, "avg_weekly_load": 5.7, "hours_shortfall": 0.0
+  },
+
   "steps": [
     {"order": 1, "course_id": "C-0007", "title": "...", "domain": "编程开发",
      "level": 1, "hours": 4.5, "cumulative_hours": 4.5, "week": 1,
@@ -170,11 +184,18 @@
   "milestones": [{"week": 4, "label": "掌握 假设检验", "kp_names": ["假设检验"]}],
   "alternatives": [
     {"preset": "fast", "preset_name": "速通方案", "total_hours": 48.0,
-     "weeks": 8, "total_gain": 2.31, "feasibility": 1.0,
+     "weeks": 8, "total_gain": 2.31, "feasibility": 1.0, "coverage_ratio": 0.75,
      "objectives": {"gain": 0.58, "time": 0.88, "smoothness": 0.61, "fit": 0.7}}
   ]
 }
 ```
+
+**预算与覆盖率语义（重要）**
+- `budget_hours` = `learner.time_budget_hours_per_week × learner.deadline_weeks`，是**硬容量约束**；
+- **`total_hours` 恒 ≤ `budget_hours`**，`over_budget` 恒为 `false`（保留作防御性断言）；
+- `coverage_ratio` = 被路径覆盖到的目标知识点占比，**由算法侧权威给出**，前端不得自行估算；
+- 预算不足以覆盖全部目标时，接口返回**预算内最优的部分路径** + `coverage_ratio < 1` + 完整的 `uncovered_target_kp_*`，
+  而不是返回一条超预算的假路径。
 
 ### `GET /api/path/{learner_id}/pareto`
 帕累托前沿，用于散点图展示「时间—收益」权衡。

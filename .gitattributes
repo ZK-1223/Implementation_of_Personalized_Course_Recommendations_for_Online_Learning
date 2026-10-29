@@ -1,0 +1,34 @@
+# 统一换行符与文本属性
+# 避免 Windows/Linux 协作时出现 CRLF 差异导致的整文件 diff
+
+* text=auto eol=lf
+
+# 显式声明为文本
+*.py    text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.css   text eol=lf
+*.html  text eol=lf
+*.js    text eol=lf
+*.txt   text eol=lf
+*.toml  text eol=lf
+*.cfg   text eol=lf
+*.ini   text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+
+# 二进制文件不做换行转换
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.joblib binary
+*.pkl   binary
+*.docx  binary
+*.doc   binary
+*.pptx  binary
+*.pdf   binary
+
+# 第三方压缩库：视为二进制，不参与 diff 与语言统计
+web/vendor/*.js binary linguist-vendored
