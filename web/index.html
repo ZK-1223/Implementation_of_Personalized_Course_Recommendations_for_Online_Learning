@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LearnPath · 在线学习个性化课程推荐与学习路径规划</title>
+  <meta name="description" content="LearnPath：基于知识图谱、混合推荐与多目标优化的个性化学习路径推荐系统" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%232f6bff'/%3E%3Cpath d='M8 22V10l8 5 8-5v12' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="/static/css/base.css" />
+  <link rel="stylesheet" href="/static/css/components.css" />
+  <link rel="stylesheet" href="/static/css/views.css" />
+</head>
+<body>
+  <div class="app" id="app">
+
+    <!-- ================= 左侧导航 ================= -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M8 22V10l8 5 8-5v12" fill="none" stroke="currentColor" stroke-width="2.6"
+                  stroke-linejoin="round" stroke-linecap="round" />
+            <circle cx="16" cy="25" r="2" fill="currentColor" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <strong>LearnPath</strong>
+          <span>个性化学习路径推荐</span>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav">
+        <a class="nav-item" href="#profile" data-view="profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <span>学习者画像</span><i class="nav-dot"></i>
+        </a>
+        <a class="nav-item" href="#recommend" data-view="recommend">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.4 5.2 5.6.7-4.1 3.9 1.1 5.6L12 15.7 7 18.4l1.1-5.6L4 8.9l5.6-.7L12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <span>智能推荐</span><i class="nav-dot"></i>
+        </a>
+        <a class="nav-item" href="#path" data-view="path">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19V7.5A2.5 2.5 0 0 1 7.5 5H9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M15 19h1.5A2.5 2.5 0 0 0 19 16.5V15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="5" r="2.2"/><circle cx="12" cy="12" r="2.2"/><circle cx="12" cy="19" r="2.2"/><path d="M12 7.2v2.6M12 14.2v2.6" stroke="currentColor" stroke-width="1.6"/></svg>
+          <span>学习路径</span><i class="nav-dot"></i>
+        </a>
+        <a class="nav-item" href="#dashboard" data-view="dashboard">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="12" width="4" height="8" rx="1.2"/><rect x="10" y="7" width="4" height="13" rx="1.2"/><rect x="16.5" y="4" width="4" height="16" rx="1.2"/></svg>
+          <span>学习分析</span><i class="nav-dot"></i>
+        </a>
+        <a class="nav-item" href="#social" data-view="social">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="9" r="3.2"/><circle cx="17" cy="10.5" r="2.4"/><path d="M3.5 19.5a5.5 5.5 0 0 1 11 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M15 19.5a4 4 0 0 1 5.5-3.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <span>社交学习</span><i class="nav-dot"></i>
+        </a>
+        <a class="nav-item" href="#evaluation" data-view="evaluation">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="m6 15 3.5-4.5L13 14l5-7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="18" cy="7" r="1.8"/></svg>
+          <span>系统评测</span><i class="nav-dot"></i>
+        </a>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div class="status-chip" id="data-source-chip" title="数据来源">
+          <i class="pulse"></i><span id="data-source-text">数据集加载中…</span>
+        </div>
+        <div class="sidebar-note">
+          <span>知识图谱 · 混合推荐 · 多目标规划</span>
+          <span id="app-version">v1.0.0</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ================= 顶部栏 ================= -->
+    <header class="topbar">
+      <div class="topbar-title">
+        <h1 id="view-title">学习者画像</h1>
+        <p id="view-subtitle">能力掌握度、目标缺口与时间预算</p>
+      </div>
+
+      <div class="topbar-actions">
+        <label class="select-wrap" title="切换学习者">
+          <span class="select-label">学习者</span>
+          <select id="learner-select" aria-label="学习者切换"></select>
+          <svg class="select-caret" viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6.5 4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </label>
+
+        <div class="segmented" id="preset-switch" role="tablist" aria-label="方案预设">
+          <button type="button" data-preset="balanced" role="tab">均衡</button>
+          <button type="button" data-preset="fast" role="tab">速通</button>
+          <button type="button" data-preset="thorough" role="tab">夯实</button>
+        </div>
+
+        <button class="icon-btn" id="refresh-btn" type="button" title="重新拉取数据" aria-label="刷新">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.7-6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M20 4v5h-5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- ================= 内容区 ================= -->
+    <main class="content" id="view-root" aria-live="polite"></main>
+
+    <!-- 全局轻提示 -->
+    <div class="toast-stack" id="toast-stack"></div>
+  </div>
+
+  <script src="/static/vendor/echarts.min.js"></script>
+  <script type="module" src="/static/js/app.js"></script>
+</body>
+</html>
