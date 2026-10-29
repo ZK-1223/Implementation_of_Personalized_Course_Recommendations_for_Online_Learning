@@ -1,0 +1,175 @@
+[
+  {
+    "goal_id": "goal_da",
+    "name": "数据分析师",
+    "target_role": "业务数据分析师",
+    "description": "从数据清洗、统计推断到建模与可视化，能独立完成业务分析报告",
+    "target_kp_ids": [
+      "KP-02-45",
+      "KP-02-48",
+      "KP-02-37",
+      "KP-02-39",
+      "KP-02-29",
+      "KP-02-30",
+      "KP-02-31",
+      "KP-02-32",
+      "KP-07-31",
+      "KP-02-22",
+      "KP-07-23",
+      "KP-05-20"
+    ],
+    "default_weeks": 12,
+    "required_mastery": 0.82
+  },
+  {
+    "goal_id": "goal_fe",
+    "name": "前端工程师",
+    "target_role": "前端开发工程师",
+    "description": "掌握语义化结构、布局与组件化框架，能独立还原设计稿并做性能优化",
+    "target_kp_ids": [
+      "KP-03-49",
+      "KP-03-50",
+      "KP-03-51",
+      "KP-03-52",
+      "KP-03-38",
+      "KP-03-41",
+      "KP-03-42",
+      "KP-03-43",
+      "KP-03-33",
+      "KP-01-25",
+      "KP-01-17",
+      "KP-01-19"
+    ],
+    "default_weeks": 16,
+    "required_mastery": 0.76
+  },
+  {
+    "goal_id": "goal_be",
+    "name": "后端工程师",
+    "target_role": "后端开发工程师",
+    "description": "覆盖语言基础、数据结构、数据库与并发，具备服务端系统开发能力",
+    "target_kp_ids": [
+      "KP-01-53",
+      "KP-01-54",
+      "KP-01-56",
+      "KP-01-57",
+      "KP-01-45",
+      "KP-01-46",
+      "KP-01-48",
+      "KP-01-49",
+      "KP-01-37",
+      "KP-04-31",
+      "KP-04-32",
+      "KP-04-24",
+      "KP-04-15"
+    ],
+    "default_weeks": 18,
+    "required_mastery": 0.81
+  },
+  {
+    "goal_id": "goal_ml",
+    "name": "算法工程师",
+    "target_role": "机器学习算法工程师",
+    "description": "以数学与统计为底座，掌握特征工程、模型训练与部署的完整链路",
+    "target_kp_ids": [
+      "KP-07-57",
+      "KP-07-60",
+      "KP-02-45",
+      "KP-02-50",
+      "KP-02-51",
+      "KP-02-52",
+      "KP-07-49",
+      "KP-07-51",
+      "KP-02-37",
+      "KP-02-38",
+      "KP-02-42",
+      "KP-02-43",
+      "KP-02-34",
+      "KP-07-30"
+    ],
+    "default_weeks": 24,
+    "required_mastery": 0.77
+  },
+  {
+    "goal_id": "goal_pm",
+    "name": "产品经理",
+    "target_role": "互联网产品经理",
+    "description": "从需求调研到增长实验，能够用数据驱动产品决策与跨团队推进",
+    "target_kp_ids": [
+      "KP-05-45",
+      "KP-05-47",
+      "KP-05-48",
+      "KP-05-52",
+      "KP-02-37",
+      "KP-05-37",
+      "KP-05-38",
+      "KP-05-39",
+      "KP-05-40",
+      "KP-02-19",
+      "KP-02-05"
+    ],
+    "default_weeks": 10,
+    "required_mastery": 0.81
+  },
+  {
+    "goal_id": "goal_sec",
+    "name": "网络安全工程师",
+    "target_role": "网络安全工程师",
+    "description": "协议与攻防双线并进，覆盖加固、审计、应急响应与合规要求",
+    "target_kp_ids": [
+      "KP-04-53",
+      "KP-04-54",
+      "KP-04-55",
+      "KP-04-56",
+      "KP-04-45",
+      "KP-04-46",
+      "KP-04-47",
+      "KP-04-48",
+      "KP-01-37",
+      "KP-01-38",
+      "KP-04-37",
+      "KP-01-29"
+    ],
+    "default_weeks": 16,
+    "required_mastery": 0.81
+  },
+  {
+    "goal_id": "goal_biz",
+    "name": "商务英语",
+    "target_role": "外贸/跨国团队业务骨干",
+    "description": "面向商务场景的听说读写强化，覆盖邮件、会议、谈判与演讲",
+    "target_kp_ids": [
+      "KP-06-53",
+      "KP-06-59",
+      "KP-06-60",
+      "KP-06-46",
+      "KP-06-49",
+      "KP-06-37",
+      "KP-06-33",
+      "KP-06-14",
+      "KP-06-19"
+    ],
+    "default_weeks": 8,
+    "required_mastery": 0.79
+  },
+  {
+    "goal_id": "goal_math",
+    "name": "数学基础强化",
+    "target_role": "机器学习/量化方向预备",
+    "description": "系统补强微积分、线性代数、概率统计与最优化，为算法学习打底",
+    "target_kp_ids": [
+      "KP-07-60",
+      "KP-07-45",
+      "KP-07-49",
+      "KP-07-51",
+      "KP-07-37",
+      "KP-07-41",
+      "KP-07-43",
+      "KP-07-30",
+      "KP-07-33",
+      "KP-07-22"
+    ],
+    "default_weeks": 10,
+    "required_mastery": 0.79
+  }
+]

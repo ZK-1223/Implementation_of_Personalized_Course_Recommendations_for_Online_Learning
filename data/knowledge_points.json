@@ -1,0 +1,2942 @@
+[
+  {
+    "kp_id": "KP-01-01",
+    "name": "Python 环境与虚拟环境",
+    "domain": "编程开发",
+    "difficulty": 1,
+    "description": "编程开发·入门知识点：Python 环境与虚拟环境"
+  },
+  {
+    "kp_id": "KP-01-02",
+    "name": "函数定义与调用",
+    "domain": "编程开发",
+    "difficulty": 1,
+    "description": "编程开发·入门知识点：函数定义与调用"
+  },
+  {
+    "kp_id": "KP-01-03",
+    "name": "列表与元组",
+    "domain": "编程开发",
+    "difficulty": 1,
+    "description": "编程开发·入门知识点：列表与元组"
+  },
+  {
+    "kp_id": "KP-01-04",
+    "name": "变量与数据类型",
+    "domain": "编程开发",
+    "difficulty": 1,
+    "description": "编程开发·入门知识点：变量与数据类型"
+  },
+  {
+    "kp_id": "KP-01-05",
+    "name": "字典与集合",
+    "domain": "编程开发",
+    "difficulty": 1,
+    "description": "编程开发·入门知识点：字典与集合"
+  },
+  {
+    "kp_id": "KP-01-06",
+    "name": "字符串处理",
+    "domain": "编程开发",
+    "difficulty": 1,
+    "description": "编程开发·入门知识点：字符串处理"
+  },
+  {
+    "kp_id": "KP-01-07",
+    "name": "异常处理",
+    "domain": "编程开发",
+    "difficulty": 1,
+    "description": "编程开发·入门知识点：异常处理"
+  },
+  {
+    "kp_id": "KP-01-08",
+    "name": "循环与迭代",
+    "domain": "编程开发",
+    "difficulty": 1,
+    "description": "编程开发·入门知识点：循环与迭代"
+  },
+  {
+    "kp_id": "KP-01-09",
+    "name": "文件读写",
+    "domain": "编程开发",
+    "difficulty": 1,
+    "description": "编程开发·入门知识点：文件读写"
+  },
+  {
+    "kp_id": "KP-01-10",
+    "name": "条件分支控制",
+    "domain": "编程开发",
+    "difficulty": 1,
+    "description": "编程开发·入门知识点：条件分支控制"
+  },
+  {
+    "kp_id": "KP-01-11",
+    "name": "模块与包管理",
+    "domain": "编程开发",
+    "difficulty": 1,
+    "description": "编程开发·入门知识点：模块与包管理"
+  },
+  {
+    "kp_id": "KP-01-12",
+    "name": "运算符与表达式",
+    "domain": "编程开发",
+    "difficulty": 1,
+    "description": "编程开发·入门知识点：运算符与表达式"
+  },
+  {
+    "kp_id": "KP-01-13",
+    "name": "JSON 与配置文件解析",
+    "domain": "编程开发",
+    "difficulty": 2,
+    "description": "编程开发·基础知识点：JSON 与配置文件解析"
+  },
+  {
+    "kp_id": "KP-01-14",
+    "name": "上下文管理器",
+    "domain": "编程开发",
+    "difficulty": 2,
+    "description": "编程开发·基础知识点：上下文管理器"
+  },
+  {
+    "kp_id": "KP-01-15",
+    "name": "代码风格与静态检查",
+    "domain": "编程开发",
+    "difficulty": 2,
+    "description": "编程开发·基础知识点：代码风格与静态检查"
+  },
+  {
+    "kp_id": "KP-01-16",
+    "name": "列表推导式",
+    "domain": "编程开发",
+    "difficulty": 2,
+    "description": "编程开发·基础知识点：列表推导式"
+  },
+  {
+    "kp_id": "KP-01-17",
+    "name": "单元测试与 pytest",
+    "domain": "编程开发",
+    "difficulty": 2,
+    "description": "编程开发·基础知识点：单元测试与 pytest"
+  },
+  {
+    "kp_id": "KP-01-18",
+    "name": "日志与调试技巧",
+    "domain": "编程开发",
+    "difficulty": 2,
+    "description": "编程开发·基础知识点：日志与调试技巧"
+  },
+  {
+    "kp_id": "KP-01-19",
+    "name": "正则表达式",
+    "domain": "编程开发",
+    "difficulty": 2,
+    "description": "编程开发·基础知识点：正则表达式"
+  },
+  {
+    "kp_id": "KP-01-20",
+    "name": "版本控制与 Git 工作流",
+    "domain": "编程开发",
+    "difficulty": 2,
+    "description": "编程开发·基础知识点：版本控制与 Git 工作流"
+  },
+  {
+    "kp_id": "KP-01-21",
+    "name": "类继承与多态",
+    "domain": "编程开发",
+    "difficulty": 2,
+    "description": "编程开发·基础知识点：类继承与多态"
+  },
+  {
+    "kp_id": "KP-01-22",
+    "name": "装饰器与闭包",
+    "domain": "编程开发",
+    "difficulty": 2,
+    "description": "编程开发·基础知识点：装饰器与闭包"
+  },
+  {
+    "kp_id": "KP-01-23",
+    "name": "迭代器与生成器",
+    "domain": "编程开发",
+    "difficulty": 2,
+    "description": "编程开发·基础知识点：迭代器与生成器"
+  },
+  {
+    "kp_id": "KP-01-24",
+    "name": "面向对象基础",
+    "domain": "编程开发",
+    "difficulty": 2,
+    "description": "编程开发·基础知识点：面向对象基础"
+  },
+  {
+    "kp_id": "KP-01-25",
+    "name": "HTTP 接口调用与重试",
+    "domain": "编程开发",
+    "difficulty": 3,
+    "description": "编程开发·进阶知识点：HTTP 接口调用与重试"
+  },
+  {
+    "kp_id": "KP-01-26",
+    "name": "ORM 框架使用",
+    "domain": "编程开发",
+    "difficulty": 3,
+    "description": "编程开发·进阶知识点：ORM 框架使用"
+  },
+  {
+    "kp_id": "KP-01-27",
+    "name": "关系型数据库与 SQL",
+    "domain": "编程开发",
+    "difficulty": 3,
+    "description": "编程开发·进阶知识点：关系型数据库与 SQL"
+  },
+  {
+    "kp_id": "KP-01-28",
+    "name": "哈希表原理",
+    "domain": "编程开发",
+    "difficulty": 3,
+    "description": "编程开发·进阶知识点：哈希表原理"
+  },
+  {
+    "kp_id": "KP-01-29",
+    "name": "多线程与 GIL",
+    "domain": "编程开发",
+    "difficulty": 3,
+    "description": "编程开发·进阶知识点：多线程与 GIL"
+  },
+  {
+    "kp_id": "KP-01-30",
+    "name": "异步编程 asyncio",
+    "domain": "编程开发",
+    "difficulty": 3,
+    "description": "编程开发·进阶知识点：异步编程 asyncio"
+  },
+  {
+    "kp_id": "KP-01-31",
+    "name": "排序与查找算法",
+    "domain": "编程开发",
+    "difficulty": 3,
+    "description": "编程开发·进阶知识点：排序与查找算法"
+  },
+  {
+    "kp_id": "KP-01-32",
+    "name": "数据结构：栈与队列",
+    "domain": "编程开发",
+    "difficulty": 3,
+    "description": "编程开发·进阶知识点：数据结构：栈与队列"
+  },
+  {
+    "kp_id": "KP-01-33",
+    "name": "时间复杂度分析",
+    "domain": "编程开发",
+    "difficulty": 3,
+    "description": "编程开发·进阶知识点：时间复杂度分析"
+  },
+  {
+    "kp_id": "KP-01-34",
+    "name": "缓存设计基础",
+    "domain": "编程开发",
+    "difficulty": 3,
+    "description": "编程开发·进阶知识点：缓存设计基础"
+  },
+  {
+    "kp_id": "KP-01-35",
+    "name": "递归与分治",
+    "domain": "编程开发",
+    "difficulty": 3,
+    "description": "编程开发·进阶知识点：递归与分治"
+  },
+  {
+    "kp_id": "KP-01-36",
+    "name": "链表与树结构",
+    "domain": "编程开发",
+    "difficulty": 3,
+    "description": "编程开发·进阶知识点：链表与树结构"
+  },
+  {
+    "kp_id": "KP-01-37",
+    "name": "内存管理与垃圾回收",
+    "domain": "编程开发",
+    "difficulty": 4,
+    "description": "编程开发·高级知识点：内存管理与垃圾回收"
+  },
+  {
+    "kp_id": "KP-01-38",
+    "name": "分布式锁与幂等设计",
+    "domain": "编程开发",
+    "difficulty": 4,
+    "description": "编程开发·高级知识点：分布式锁与幂等设计"
+  },
+  {
+    "kp_id": "KP-01-39",
+    "name": "动态规划",
+    "domain": "编程开发",
+    "difficulty": 4,
+    "description": "编程开发·高级知识点：动态规划"
+  },
+  {
+    "kp_id": "KP-01-40",
+    "name": "图算法与最短路径",
+    "domain": "编程开发",
+    "difficulty": 4,
+    "description": "编程开发·高级知识点：图算法与最短路径"
+  },
+  {
+    "kp_id": "KP-01-41",
+    "name": "容器化与 Dockerfile",
+    "domain": "编程开发",
+    "difficulty": 4,
+    "description": "编程开发·高级知识点：容器化与 Dockerfile"
+  },
+  {
+    "kp_id": "KP-01-42",
+    "name": "并发编程与线程池",
+    "domain": "编程开发",
+    "difficulty": 4,
+    "description": "编程开发·高级知识点：并发编程与线程池"
+  },
+  {
+    "kp_id": "KP-01-43",
+    "name": "微服务拆分原则",
+    "domain": "编程开发",
+    "difficulty": 4,
+    "description": "编程开发·高级知识点：微服务拆分原则"
+  },
+  {
+    "kp_id": "KP-01-44",
+    "name": "性能剖析与优化",
+    "domain": "编程开发",
+    "difficulty": 4,
+    "description": "编程开发·高级知识点：性能剖析与优化"
+  },
+  {
+    "kp_id": "KP-01-45",
+    "name": "持续集成与交付流水线",
+    "domain": "编程开发",
+    "difficulty": 4,
+    "description": "编程开发·高级知识点：持续集成与交付流水线"
+  },
+  {
+    "kp_id": "KP-01-46",
+    "name": "消息队列与事件驱动",
+    "domain": "编程开发",
+    "difficulty": 4,
+    "description": "编程开发·高级知识点：消息队列与事件驱动"
+  },
+  {
+    "kp_id": "KP-01-47",
+    "name": "设计模式：工厂与策略",
+    "domain": "编程开发",
+    "difficulty": 4,
+    "description": "编程开发·高级知识点：设计模式：工厂与策略"
+  },
+  {
+    "kp_id": "KP-01-48",
+    "name": "领域建模与分层架构",
+    "domain": "编程开发",
+    "difficulty": 4,
+    "description": "编程开发·高级知识点：领域建模与分层架构"
+  },
+  {
+    "kp_id": "KP-01-49",
+    "name": "云原生架构设计",
+    "domain": "编程开发",
+    "difficulty": 5,
+    "description": "编程开发·专家级知识点：云原生架构设计"
+  },
+  {
+    "kp_id": "KP-01-50",
+    "name": "分布式事务",
+    "domain": "编程开发",
+    "difficulty": 5,
+    "description": "编程开发·专家级知识点：分布式事务"
+  },
+  {
+    "kp_id": "KP-01-51",
+    "name": "可观测性与链路追踪",
+    "domain": "编程开发",
+    "difficulty": 5,
+    "description": "编程开发·专家级知识点：可观测性与链路追踪"
+  },
+  {
+    "kp_id": "KP-01-52",
+    "name": "技术方案设计与权衡",
+    "domain": "编程开发",
+    "difficulty": 5,
+    "description": "编程开发·专家级知识点：技术方案设计与权衡"
+  },
+  {
+    "kp_id": "KP-01-53",
+    "name": "数据库分库分表",
+    "domain": "编程开发",
+    "difficulty": 5,
+    "description": "编程开发·专家级知识点：数据库分库分表"
+  },
+  {
+    "kp_id": "KP-01-54",
+    "name": "服务治理与限流降级",
+    "domain": "编程开发",
+    "difficulty": 5,
+    "description": "编程开发·专家级知识点：服务治理与限流降级"
+  },
+  {
+    "kp_id": "KP-01-55",
+    "name": "架构评审与技术规划",
+    "domain": "编程开发",
+    "difficulty": 5,
+    "description": "编程开发·专家级知识点：架构评审与技术规划"
+  },
+  {
+    "kp_id": "KP-01-56",
+    "name": "稳定性与故障演练",
+    "domain": "编程开发",
+    "difficulty": 5,
+    "description": "编程开发·专家级知识点：稳定性与故障演练"
+  },
+  {
+    "kp_id": "KP-01-57",
+    "name": "系统容量评估",
+    "domain": "编程开发",
+    "difficulty": 5,
+    "description": "编程开发·专家级知识点：系统容量评估"
+  },
+  {
+    "kp_id": "KP-01-58",
+    "name": "缓存一致性与穿透",
+    "domain": "编程开发",
+    "difficulty": 5,
+    "description": "编程开发·专家级知识点：缓存一致性与穿透"
+  },
+  {
+    "kp_id": "KP-01-59",
+    "name": "领域驱动设计实践",
+    "domain": "编程开发",
+    "difficulty": 5,
+    "description": "编程开发·专家级知识点：领域驱动设计实践"
+  },
+  {
+    "kp_id": "KP-01-60",
+    "name": "高并发系统设计",
+    "domain": "编程开发",
+    "difficulty": 5,
+    "description": "编程开发·专家级知识点：高并发系统设计"
+  },
+  {
+    "kp_id": "KP-02-01",
+    "name": "Pandas Series 与 DataFrame",
+    "domain": "数据与人工智能",
+    "difficulty": 1,
+    "description": "数据与人工智能·入门知识点：Pandas Series 与 DataFrame"
+  },
+  {
+    "kp_id": "KP-02-02",
+    "name": "Python 数据分析环境",
+    "domain": "数据与人工智能",
+    "difficulty": 1,
+    "description": "数据与人工智能·入门知识点：Python 数据分析环境"
+  },
+  {
+    "kp_id": "KP-02-03",
+    "name": "分组聚合操作",
+    "domain": "数据与人工智能",
+    "difficulty": 1,
+    "description": "数据与人工智能·入门知识点：分组聚合操作"
+  },
+  {
+    "kp_id": "KP-02-04",
+    "name": "异常值识别",
+    "domain": "数据与人工智能",
+    "difficulty": 1,
+    "description": "数据与人工智能·入门知识点：异常值识别"
+  },
+  {
+    "kp_id": "KP-02-05",
+    "name": "描述性统计量",
+    "domain": "数据与人工智能",
+    "difficulty": 1,
+    "description": "数据与人工智能·入门知识点：描述性统计量"
+  },
+  {
+    "kp_id": "KP-02-06",
+    "name": "数据可视化入门",
+    "domain": "数据与人工智能",
+    "difficulty": 1,
+    "description": "数据与人工智能·入门知识点：数据可视化入门"
+  },
+  {
+    "kp_id": "KP-02-07",
+    "name": "数据合并与去重",
+    "domain": "数据与人工智能",
+    "difficulty": 1,
+    "description": "数据与人工智能·入门知识点：数据合并与去重"
+  },
+  {
+    "kp_id": "KP-02-08",
+    "name": "数据导入与导出",
+    "domain": "数据与人工智能",
+    "difficulty": 1,
+    "description": "数据与人工智能·入门知识点：数据导入与导出"
+  },
+  {
+    "kp_id": "KP-02-09",
+    "name": "数据清洗基础",
+    "domain": "数据与人工智能",
+    "difficulty": 1,
+    "description": "数据与人工智能·入门知识点：数据清洗基础"
+  },
+  {
+    "kp_id": "KP-02-10",
+    "name": "数据类型转换",
+    "domain": "数据与人工智能",
+    "difficulty": 1,
+    "description": "数据与人工智能·入门知识点：数据类型转换"
+  },
+  {
+    "kp_id": "KP-02-11",
+    "name": "电子表格数据分析",
+    "domain": "数据与人工智能",
+    "difficulty": 1,
+    "description": "数据与人工智能·入门知识点：电子表格数据分析"
+  },
+  {
+    "kp_id": "KP-02-12",
+    "name": "缺失值处理",
+    "domain": "数据与人工智能",
+    "difficulty": 1,
+    "description": "数据与人工智能·入门知识点：缺失值处理"
+  },
+  {
+    "kp_id": "KP-02-13",
+    "name": "Pandas 数据透视",
+    "domain": "数据与人工智能",
+    "difficulty": 2,
+    "description": "数据与人工智能·基础知识点：Pandas 数据透视"
+  },
+  {
+    "kp_id": "KP-02-14",
+    "name": "SQL 查询与多表连接",
+    "domain": "数据与人工智能",
+    "difficulty": 2,
+    "description": "数据与人工智能·基础知识点：SQL 查询与多表连接"
+  },
+  {
+    "kp_id": "KP-02-15",
+    "name": "SQL 窗口函数",
+    "domain": "数据与人工智能",
+    "difficulty": 2,
+    "description": "数据与人工智能·基础知识点：SQL 窗口函数"
+  },
+  {
+    "kp_id": "KP-02-16",
+    "name": "交叉验证方法",
+    "domain": "数据与人工智能",
+    "difficulty": 2,
+    "description": "数据与人工智能·基础知识点：交叉验证方法"
+  },
+  {
+    "kp_id": "KP-02-17",
+    "name": "多层索引与数据重塑",
+    "domain": "数据与人工智能",
+    "difficulty": 2,
+    "description": "数据与人工智能·基础知识点：多层索引与数据重塑"
+  },
+  {
+    "kp_id": "KP-02-18",
+    "name": "数据标准化与归一化",
+    "domain": "数据与人工智能",
+    "difficulty": 2,
+    "description": "数据与人工智能·基础知识点：数据标准化与归一化"
+  },
+  {
+    "kp_id": "KP-02-19",
+    "name": "数据质量校验",
+    "domain": "数据与人工智能",
+    "difficulty": 2,
+    "description": "数据与人工智能·基础知识点：数据质量校验"
+  },
+  {
+    "kp_id": "KP-02-20",
+    "name": "时间序列处理",
+    "domain": "数据与人工智能",
+    "difficulty": 2,
+    "description": "数据与人工智能·基础知识点：时间序列处理"
+  },
+  {
+    "kp_id": "KP-02-21",
+    "name": "混淆矩阵与准确率",
+    "domain": "数据与人工智能",
+    "difficulty": 2,
+    "description": "数据与人工智能·基础知识点：混淆矩阵与准确率"
+  },
+  {
+    "kp_id": "KP-02-22",
+    "name": "特征工程基础",
+    "domain": "数据与人工智能",
+    "difficulty": 2,
+    "description": "数据与人工智能·基础知识点：特征工程基础"
+  },
+  {
+    "kp_id": "KP-02-23",
+    "name": "类别编码与独热编码",
+    "domain": "数据与人工智能",
+    "difficulty": 2,
+    "description": "数据与人工智能·基础知识点：类别编码与独热编码"
+  },
+  {
+    "kp_id": "KP-02-24",
+    "name": "训练集与测试集划分",
+    "domain": "数据与人工智能",
+    "difficulty": 2,
+    "description": "数据与人工智能·基础知识点：训练集与测试集划分"
+  },
+  {
+    "kp_id": "KP-02-25",
+    "name": "假设检验与 p 值",
+    "domain": "数据与人工智能",
+    "difficulty": 3,
+    "description": "数据与人工智能·进阶知识点：假设检验与 p 值"
+  },
+  {
+    "kp_id": "KP-02-26",
+    "name": "决策树与随机森林",
+    "domain": "数据与人工智能",
+    "difficulty": 3,
+    "description": "数据与人工智能·进阶知识点：决策树与随机森林"
+  },
+  {
+    "kp_id": "KP-02-27",
+    "name": "方差分析与卡方检验",
+    "domain": "数据与人工智能",
+    "difficulty": 3,
+    "description": "数据与人工智能·进阶知识点：方差分析与卡方检验"
+  },
+  {
+    "kp_id": "KP-02-28",
+    "name": "梯度提升树 XGBoost",
+    "domain": "数据与人工智能",
+    "difficulty": 3,
+    "description": "数据与人工智能·进阶知识点：梯度提升树 XGBoost"
+  },
+  {
+    "kp_id": "KP-02-29",
+    "name": "模型评估与 ROC 曲线",
+    "domain": "数据与人工智能",
+    "difficulty": 3,
+    "description": "数据与人工智能·进阶知识点：模型评估与 ROC 曲线"
+  },
+  {
+    "kp_id": "KP-02-30",
+    "name": "特征选择方法",
+    "domain": "数据与人工智能",
+    "difficulty": 3,
+    "description": "数据与人工智能·进阶知识点：特征选择方法"
+  },
+  {
+    "kp_id": "KP-02-31",
+    "name": "相关分析与因果关系",
+    "domain": "数据与人工智能",
+    "difficulty": 3,
+    "description": "数据与人工智能·进阶知识点：相关分析与因果关系"
+  },
+  {
+    "kp_id": "KP-02-32",
+    "name": "线性回归建模",
+    "domain": "数据与人工智能",
+    "difficulty": 3,
+    "description": "数据与人工智能·进阶知识点：线性回归建模"
+  },
+  {
+    "kp_id": "KP-02-33",
+    "name": "网格搜索调参",
+    "domain": "数据与人工智能",
+    "difficulty": 3,
+    "description": "数据与人工智能·进阶知识点：网格搜索调参"
+  },
+  {
+    "kp_id": "KP-02-34",
+    "name": "置信区间估计",
+    "domain": "数据与人工智能",
+    "difficulty": 3,
+    "description": "数据与人工智能·进阶知识点：置信区间估计"
+  },
+  {
+    "kp_id": "KP-02-35",
+    "name": "过拟合与正则化",
+    "domain": "数据与人工智能",
+    "difficulty": 3,
+    "description": "数据与人工智能·进阶知识点：过拟合与正则化"
+  },
+  {
+    "kp_id": "KP-02-36",
+    "name": "逻辑回归分类",
+    "domain": "数据与人工智能",
+    "difficulty": 3,
+    "description": "数据与人工智能·进阶知识点：逻辑回归分类"
+  },
+  {
+    "kp_id": "KP-02-37",
+    "name": "A/B 测试与统计推断",
+    "domain": "数据与人工智能",
+    "difficulty": 4,
+    "description": "数据与人工智能·高级知识点：A/B 测试与统计推断"
+  },
+  {
+    "kp_id": "KP-02-38",
+    "name": "卷积神经网络",
+    "domain": "数据与人工智能",
+    "difficulty": 4,
+    "description": "数据与人工智能·高级知识点：卷积神经网络"
+  },
+  {
+    "kp_id": "KP-02-39",
+    "name": "异常检测算法",
+    "domain": "数据与人工智能",
+    "difficulty": 4,
+    "description": "数据与人工智能·高级知识点：异常检测算法"
+  },
+  {
+    "kp_id": "KP-02-40",
+    "name": "推荐系统协同过滤",
+    "domain": "数据与人工智能",
+    "difficulty": 4,
+    "description": "数据与人工智能·高级知识点：推荐系统协同过滤"
+  },
+  {
+    "kp_id": "KP-02-41",
+    "name": "时间序列预测 ARIMA",
+    "domain": "数据与人工智能",
+    "difficulty": 4,
+    "description": "数据与人工智能·高级知识点：时间序列预测 ARIMA"
+  },
+  {
+    "kp_id": "KP-02-42",
+    "name": "模型部署与推理服务",
+    "domain": "数据与人工智能",
+    "difficulty": 4,
+    "description": "数据与人工智能·高级知识点：模型部署与推理服务"
+  },
+  {
+    "kp_id": "KP-02-43",
+    "name": "特征仓库与线上线下一致",
+    "domain": "数据与人工智能",
+    "difficulty": 4,
+    "description": "数据与人工智能·高级知识点：特征仓库与线上线下一致"
+  },
+  {
+    "kp_id": "KP-02-44",
+    "name": "神经网络基础",
+    "domain": "数据与人工智能",
+    "difficulty": 4,
+    "description": "数据与人工智能·高级知识点：神经网络基础"
+  },
+  {
+    "kp_id": "KP-02-45",
+    "name": "聚类与客户分群",
+    "domain": "数据与人工智能",
+    "difficulty": 4,
+    "description": "数据与人工智能·高级知识点：聚类与客户分群"
+  },
+  {
+    "kp_id": "KP-02-46",
+    "name": "自然语言处理基础",
+    "domain": "数据与人工智能",
+    "difficulty": 4,
+    "description": "数据与人工智能·高级知识点：自然语言处理基础"
+  },
+  {
+    "kp_id": "KP-02-47",
+    "name": "词向量与文本分类",
+    "domain": "数据与人工智能",
+    "difficulty": 4,
+    "description": "数据与人工智能·高级知识点：词向量与文本分类"
+  },
+  {
+    "kp_id": "KP-02-48",
+    "name": "降维与主成分分析",
+    "domain": "数据与人工智能",
+    "difficulty": 4,
+    "description": "数据与人工智能·高级知识点：降维与主成分分析"
+  },
+  {
+    "kp_id": "KP-02-49",
+    "name": "MLOps 与模型治理",
+    "domain": "数据与人工智能",
+    "difficulty": 5,
+    "description": "数据与人工智能·专家级知识点：MLOps 与模型治理"
+  },
+  {
+    "kp_id": "KP-02-50",
+    "name": "Transformer 与大模型微调",
+    "domain": "数据与人工智能",
+    "difficulty": 5,
+    "description": "数据与人工智能·专家级知识点：Transformer 与大模型微调"
+  },
+  {
+    "kp_id": "KP-02-51",
+    "name": "分布式训练与显存优化",
+    "domain": "数据与人工智能",
+    "difficulty": 5,
+    "description": "数据与人工智能·专家级知识点：分布式训练与显存优化"
+  },
+  {
+    "kp_id": "KP-02-52",
+    "name": "向量数据库与语义检索",
+    "domain": "数据与人工智能",
+    "difficulty": 5,
+    "description": "数据与人工智能·专家级知识点：向量数据库与语义检索"
+  },
+  {
+    "kp_id": "KP-02-53",
+    "name": "多模态模型应用",
+    "domain": "数据与人工智能",
+    "difficulty": 5,
+    "description": "数据与人工智能·专家级知识点：多模态模型应用"
+  },
+  {
+    "kp_id": "KP-02-54",
+    "name": "大模型评测与对齐",
+    "domain": "数据与人工智能",
+    "difficulty": 5,
+    "description": "数据与人工智能·专家级知识点：大模型评测与对齐"
+  },
+  {
+    "kp_id": "KP-02-55",
+    "name": "实验平台与指标治理",
+    "domain": "数据与人工智能",
+    "difficulty": 5,
+    "description": "数据与人工智能·专家级知识点：实验平台与指标治理"
+  },
+  {
+    "kp_id": "KP-02-56",
+    "name": "强化学习基础",
+    "domain": "数据与人工智能",
+    "difficulty": 5,
+    "description": "数据与人工智能·专家级知识点：强化学习基础"
+  },
+  {
+    "kp_id": "KP-02-57",
+    "name": "数据漂移监控",
+    "domain": "数据与人工智能",
+    "difficulty": 5,
+    "description": "数据与人工智能·专家级知识点：数据漂移监控"
+  },
+  {
+    "kp_id": "KP-02-58",
+    "name": "检索增强生成 RAG",
+    "domain": "数据与人工智能",
+    "difficulty": 5,
+    "description": "数据与人工智能·专家级知识点：检索增强生成 RAG"
+  },
+  {
+    "kp_id": "KP-02-59",
+    "name": "模型压缩与量化",
+    "domain": "数据与人工智能",
+    "difficulty": 5,
+    "description": "数据与人工智能·专家级知识点：模型压缩与量化"
+  },
+  {
+    "kp_id": "KP-02-60",
+    "name": "深度学习训练调优",
+    "domain": "数据与人工智能",
+    "difficulty": 5,
+    "description": "数据与人工智能·专家级知识点：深度学习训练调优"
+  },
+  {
+    "kp_id": "KP-03-01",
+    "name": "CSS 选择器与优先级",
+    "domain": "前端与设计",
+    "difficulty": 1,
+    "description": "前端与设计·入门知识点：CSS 选择器与优先级"
+  },
+  {
+    "kp_id": "KP-03-02",
+    "name": "DOM 操作与事件",
+    "domain": "前端与设计",
+    "difficulty": 1,
+    "description": "前端与设计·入门知识点：DOM 操作与事件"
+  },
+  {
+    "kp_id": "KP-03-03",
+    "name": "HTML 语义化标签",
+    "domain": "前端与设计",
+    "difficulty": 1,
+    "description": "前端与设计·入门知识点：HTML 语义化标签"
+  },
+  {
+    "kp_id": "KP-03-04",
+    "name": "JavaScript 基础语法",
+    "domain": "前端与设计",
+    "difficulty": 1,
+    "description": "前端与设计·入门知识点：JavaScript 基础语法"
+  },
+  {
+    "kp_id": "KP-03-05",
+    "name": "前端版本控制",
+    "domain": "前端与设计",
+    "difficulty": 1,
+    "description": "前端与设计·入门知识点：前端版本控制"
+  },
+  {
+    "kp_id": "KP-03-06",
+    "name": "图标与素材规范",
+    "domain": "前端与设计",
+    "difficulty": 1,
+    "description": "前端与设计·入门知识点：图标与素材规范"
+  },
+  {
+    "kp_id": "KP-03-07",
+    "name": "图片与响应式适配",
+    "domain": "前端与设计",
+    "difficulty": 1,
+    "description": "前端与设计·入门知识点：图片与响应式适配"
+  },
+  {
+    "kp_id": "KP-03-08",
+    "name": "排版与字体系统",
+    "domain": "前端与设计",
+    "difficulty": 1,
+    "description": "前端与设计·入门知识点：排版与字体系统"
+  },
+  {
+    "kp_id": "KP-03-09",
+    "name": "浏览器开发者工具",
+    "domain": "前端与设计",
+    "difficulty": 1,
+    "description": "前端与设计·入门知识点：浏览器开发者工具"
+  },
+  {
+    "kp_id": "KP-03-10",
+    "name": "盒模型与间距",
+    "domain": "前端与设计",
+    "difficulty": 1,
+    "description": "前端与设计·入门知识点：盒模型与间距"
+  },
+  {
+    "kp_id": "KP-03-11",
+    "name": "色彩基础与配色",
+    "domain": "前端与设计",
+    "difficulty": 1,
+    "description": "前端与设计·入门知识点：色彩基础与配色"
+  },
+  {
+    "kp_id": "KP-03-12",
+    "name": "表单与输入校验",
+    "domain": "前端与设计",
+    "difficulty": 1,
+    "description": "前端与设计·入门知识点：表单与输入校验"
+  },
+  {
+    "kp_id": "KP-03-13",
+    "name": "CSS 变量与主题化",
+    "domain": "前端与设计",
+    "difficulty": 2,
+    "description": "前端与设计·基础知识点：CSS 变量与主题化"
+  },
+  {
+    "kp_id": "KP-03-14",
+    "name": "ES Module 模块化",
+    "domain": "前端与设计",
+    "difficulty": 2,
+    "description": "前端与设计·基础知识点：ES Module 模块化"
+  },
+  {
+    "kp_id": "KP-03-15",
+    "name": "Flex 弹性布局",
+    "domain": "前端与设计",
+    "difficulty": 2,
+    "description": "前端与设计·基础知识点：Flex 弹性布局"
+  },
+  {
+    "kp_id": "KP-03-16",
+    "name": "Grid 网格布局",
+    "domain": "前端与设计",
+    "difficulty": 2,
+    "description": "前端与设计·基础知识点：Grid 网格布局"
+  },
+  {
+    "kp_id": "KP-03-17",
+    "name": "JavaScript 异步与 Promise",
+    "domain": "前端与设计",
+    "difficulty": 2,
+    "description": "前端与设计·基础知识点：JavaScript 异步与 Promise"
+  },
+  {
+    "kp_id": "KP-03-18",
+    "name": "fetch 与接口联调",
+    "domain": "前端与设计",
+    "difficulty": 2,
+    "description": "前端与设计·基础知识点：fetch 与接口联调"
+  },
+  {
+    "kp_id": "KP-03-19",
+    "name": "前端路由原理",
+    "domain": "前端与设计",
+    "difficulty": 2,
+    "description": "前端与设计·基础知识点：前端路由原理"
+  },
+  {
+    "kp_id": "KP-03-20",
+    "name": "受控表单组件",
+    "domain": "前端与设计",
+    "difficulty": 2,
+    "description": "前端与设计·基础知识点：受控表单组件"
+  },
+  {
+    "kp_id": "KP-03-21",
+    "name": "响应式断点设计",
+    "domain": "前端与设计",
+    "difficulty": 2,
+    "description": "前端与设计·基础知识点：响应式断点设计"
+  },
+  {
+    "kp_id": "KP-03-22",
+    "name": "状态管理基础",
+    "domain": "前端与设计",
+    "difficulty": 2,
+    "description": "前端与设计·基础知识点：状态管理基础"
+  },
+  {
+    "kp_id": "KP-03-23",
+    "name": "组件化开发思想",
+    "domain": "前端与设计",
+    "difficulty": 2,
+    "description": "前端与设计·基础知识点：组件化开发思想"
+  },
+  {
+    "kp_id": "KP-03-24",
+    "name": "过渡与动画",
+    "domain": "前端与设计",
+    "difficulty": 2,
+    "description": "前端与设计·基础知识点：过渡与动画"
+  },
+  {
+    "kp_id": "KP-03-25",
+    "name": "React Hooks 实践",
+    "domain": "前端与设计",
+    "difficulty": 3,
+    "description": "前端与设计·进阶知识点：React Hooks 实践"
+  },
+  {
+    "kp_id": "KP-03-26",
+    "name": "TypeScript 类型系统",
+    "domain": "前端与设计",
+    "difficulty": 3,
+    "description": "前端与设计·进阶知识点：TypeScript 类型系统"
+  },
+  {
+    "kp_id": "KP-03-27",
+    "name": "Vue 组合式 API",
+    "domain": "前端与设计",
+    "difficulty": 3,
+    "description": "前端与设计·进阶知识点：Vue 组合式 API"
+  },
+  {
+    "kp_id": "KP-03-28",
+    "name": "交互设计原则",
+    "domain": "前端与设计",
+    "difficulty": 3,
+    "description": "前端与设计·进阶知识点：交互设计原则"
+  },
+  {
+    "kp_id": "KP-03-29",
+    "name": "前端性能指标 LCP",
+    "domain": "前端与设计",
+    "difficulty": 3,
+    "description": "前端与设计·进阶知识点：前端性能指标 LCP"
+  },
+  {
+    "kp_id": "KP-03-30",
+    "name": "原型工具与高保真稿",
+    "domain": "前端与设计",
+    "difficulty": 3,
+    "description": "前端与设计·进阶知识点：原型工具与高保真稿"
+  },
+  {
+    "kp_id": "KP-03-31",
+    "name": "图片与资源优化",
+    "domain": "前端与设计",
+    "difficulty": 3,
+    "description": "前端与设计·进阶知识点：图片与资源优化"
+  },
+  {
+    "kp_id": "KP-03-32",
+    "name": "无障碍设计 a11y",
+    "domain": "前端与设计",
+    "difficulty": 3,
+    "description": "前端与设计·进阶知识点：无障碍设计 a11y"
+  },
+  {
+    "kp_id": "KP-03-33",
+    "name": "用户旅程与信息架构",
+    "domain": "前端与设计",
+    "difficulty": 3,
+    "description": "前端与设计·进阶知识点：用户旅程与信息架构"
+  },
+  {
+    "kp_id": "KP-03-34",
+    "name": "移动优先与跨端适配",
+    "domain": "前端与设计",
+    "difficulty": 3,
+    "description": "前端与设计·进阶知识点：移动优先与跨端适配"
+  },
+  {
+    "kp_id": "KP-03-35",
+    "name": "组件单元测试",
+    "domain": "前端与设计",
+    "difficulty": 3,
+    "description": "前端与设计·进阶知识点：组件单元测试"
+  },
+  {
+    "kp_id": "KP-03-36",
+    "name": "组件库与设计系统",
+    "domain": "前端与设计",
+    "difficulty": 3,
+    "description": "前端与设计·进阶知识点：组件库与设计系统"
+  },
+  {
+    "kp_id": "KP-03-37",
+    "name": "ECharts 数据可视化实践",
+    "domain": "前端与设计",
+    "difficulty": 4,
+    "description": "前端与设计·高级知识点：ECharts 数据可视化实践"
+  },
+  {
+    "kp_id": "KP-03-38",
+    "name": "Redux 状态管理进阶",
+    "domain": "前端与设计",
+    "difficulty": 4,
+    "description": "前端与设计·高级知识点：Redux 状态管理进阶"
+  },
+  {
+    "kp_id": "KP-03-39",
+    "name": "交互动效与微交互",
+    "domain": "前端与设计",
+    "difficulty": 4,
+    "description": "前端与设计·高级知识点：交互动效与微交互"
+  },
+  {
+    "kp_id": "KP-03-40",
+    "name": "前端安全与 XSS 防护",
+    "domain": "前端与设计",
+    "difficulty": 4,
+    "description": "前端与设计·高级知识点：前端安全与 XSS 防护"
+  },
+  {
+    "kp_id": "KP-03-41",
+    "name": "前端工程化与 Monorepo",
+    "domain": "前端与设计",
+    "difficulty": 4,
+    "description": "前端与设计·高级知识点：前端工程化与 Monorepo"
+  },
+  {
+    "kp_id": "KP-03-42",
+    "name": "前端监控与错误上报",
+    "domain": "前端与设计",
+    "difficulty": 4,
+    "description": "前端与设计·高级知识点：前端监控与错误上报"
+  },
+  {
+    "kp_id": "KP-03-43",
+    "name": "可视化图表设计原则",
+    "domain": "前端与设计",
+    "difficulty": 4,
+    "description": "前端与设计·高级知识点：可视化图表设计原则"
+  },
+  {
+    "kp_id": "KP-03-44",
+    "name": "国际化与无障碍架构",
+    "domain": "前端与设计",
+    "difficulty": 4,
+    "description": "前端与设计·高级知识点：国际化与无障碍架构"
+  },
+  {
+    "kp_id": "KP-03-45",
+    "name": "微前端架构",
+    "domain": "前端与设计",
+    "difficulty": 4,
+    "description": "前端与设计·高级知识点：微前端架构"
+  },
+  {
+    "kp_id": "KP-03-46",
+    "name": "服务端渲染与同构",
+    "domain": "前端与设计",
+    "difficulty": 4,
+    "description": "前端与设计·高级知识点：服务端渲染与同构"
+  },
+  {
+    "kp_id": "KP-03-47",
+    "name": "构建性能与代码分包",
+    "domain": "前端与设计",
+    "difficulty": 4,
+    "description": "前端与设计·高级知识点：构建性能与代码分包"
+  },
+  {
+    "kp_id": "KP-03-48",
+    "name": "设计令牌与主题体系",
+    "domain": "前端与设计",
+    "difficulty": 4,
+    "description": "前端与设计·高级知识点：设计令牌与主题体系"
+  },
+  {
+    "kp_id": "KP-03-49",
+    "name": "WebGL 与可视化渲染",
+    "domain": "前端与设计",
+    "difficulty": 5,
+    "description": "前端与设计·专家级知识点：WebGL 与可视化渲染"
+  },
+  {
+    "kp_id": "KP-03-50",
+    "name": "低代码平台与表单引擎",
+    "domain": "前端与设计",
+    "difficulty": 5,
+    "description": "前端与设计·专家级知识点：低代码平台与表单引擎"
+  },
+  {
+    "kp_id": "KP-03-51",
+    "name": "体验设计与增长实验",
+    "domain": "前端与设计",
+    "difficulty": 5,
+    "description": "前端与设计·专家级知识点：体验设计与增长实验"
+  },
+  {
+    "kp_id": "KP-03-52",
+    "name": "前端可观测性建设",
+    "domain": "前端与设计",
+    "difficulty": 5,
+    "description": "前端与设计·专家级知识点：前端可观测性建设"
+  },
+  {
+    "kp_id": "KP-03-53",
+    "name": "前端技术规划与协作",
+    "domain": "前端与设计",
+    "difficulty": 5,
+    "description": "前端与设计·专家级知识点：前端技术规划与协作"
+  },
+  {
+    "kp_id": "KP-03-54",
+    "name": "前端架构与性能治理",
+    "domain": "前端与设计",
+    "difficulty": 5,
+    "description": "前端与设计·专家级知识点：前端架构与性能治理"
+  },
+  {
+    "kp_id": "KP-03-55",
+    "name": "前端自动化测试体系",
+    "domain": "前端与设计",
+    "difficulty": 5,
+    "description": "前端与设计·专家级知识点：前端自动化测试体系"
+  },
+  {
+    "kp_id": "KP-03-56",
+    "name": "可用性测试与用户研究",
+    "domain": "前端与设计",
+    "difficulty": 5,
+    "description": "前端与设计·专家级知识点：可用性测试与用户研究"
+  },
+  {
+    "kp_id": "KP-03-57",
+    "name": "多端统一渲染方案",
+    "domain": "前端与设计",
+    "difficulty": 5,
+    "description": "前端与设计·专家级知识点：多端统一渲染方案"
+  },
+  {
+    "kp_id": "KP-03-58",
+    "name": "组件库跨团队治理",
+    "domain": "前端与设计",
+    "difficulty": 5,
+    "description": "前端与设计·专家级知识点：组件库跨团队治理"
+  },
+  {
+    "kp_id": "KP-03-59",
+    "name": "设计系统落地与验收",
+    "domain": "前端与设计",
+    "difficulty": 5,
+    "description": "前端与设计·专家级知识点：设计系统落地与验收"
+  },
+  {
+    "kp_id": "KP-03-60",
+    "name": "设计语言与品牌体系",
+    "domain": "前端与设计",
+    "difficulty": 5,
+    "description": "前端与设计·专家级知识点：设计语言与品牌体系"
+  },
+  {
+    "kp_id": "KP-04-01",
+    "name": "HTTP 协议基础",
+    "domain": "网络与安全",
+    "difficulty": 1,
+    "description": "网络与安全·入门知识点：HTTP 协议基础"
+  },
+  {
+    "kp_id": "KP-04-02",
+    "name": "IP 地址与子网划分",
+    "domain": "网络与安全",
+    "difficulty": 1,
+    "description": "网络与安全·入门知识点：IP 地址与子网划分"
+  },
+  {
+    "kp_id": "KP-04-03",
+    "name": "加密与编码基础",
+    "domain": "网络与安全",
+    "difficulty": 1,
+    "description": "网络与安全·入门知识点：加密与编码基础"
+  },
+  {
+    "kp_id": "KP-04-04",
+    "name": "域名解析 DNS",
+    "domain": "网络与安全",
+    "difficulty": 1,
+    "description": "网络与安全·入门知识点：域名解析 DNS"
+  },
+  {
+    "kp_id": "KP-04-05",
+    "name": "安全威胁概览",
+    "domain": "网络与安全",
+    "difficulty": 1,
+    "description": "网络与安全·入门知识点：安全威胁概览"
+  },
+  {
+    "kp_id": "KP-04-06",
+    "name": "密码与身份认证",
+    "domain": "网络与安全",
+    "difficulty": 1,
+    "description": "网络与安全·入门知识点：密码与身份认证"
+  },
+  {
+    "kp_id": "KP-04-07",
+    "name": "局域网与路由入门",
+    "domain": "网络与安全",
+    "difficulty": 1,
+    "description": "网络与安全·入门知识点：局域网与路由入门"
+  },
+  {
+    "kp_id": "KP-04-08",
+    "name": "浏览器与服务端通信",
+    "domain": "网络与安全",
+    "difficulty": 1,
+    "description": "网络与安全·入门知识点：浏览器与服务端通信"
+  },
+  {
+    "kp_id": "KP-04-09",
+    "name": "状态码与报文结构",
+    "domain": "网络与安全",
+    "difficulty": 1,
+    "description": "网络与安全·入门知识点：状态码与报文结构"
+  },
+  {
+    "kp_id": "KP-04-10",
+    "name": "系统补丁与安全基线",
+    "domain": "网络与安全",
+    "difficulty": 1,
+    "description": "网络与安全·入门知识点：系统补丁与安全基线"
+  },
+  {
+    "kp_id": "KP-04-11",
+    "name": "网络排错常用命令",
+    "domain": "网络与安全",
+    "difficulty": 1,
+    "description": "网络与安全·入门知识点：网络排错常用命令"
+  },
+  {
+    "kp_id": "KP-04-12",
+    "name": "计算机网络分层模型",
+    "domain": "网络与安全",
+    "difficulty": 1,
+    "description": "网络与安全·入门知识点：计算机网络分层模型"
+  },
+  {
+    "kp_id": "KP-04-13",
+    "name": "HTTPS 部署实践",
+    "domain": "网络与安全",
+    "difficulty": 2,
+    "description": "网络与安全·基础知识点：HTTPS 部署实践"
+  },
+  {
+    "kp_id": "KP-04-14",
+    "name": "SQL 注入原理与防护",
+    "domain": "网络与安全",
+    "difficulty": 2,
+    "description": "网络与安全·基础知识点：SQL 注入原理与防护"
+  },
+  {
+    "kp_id": "KP-04-15",
+    "name": "TCP 三次握手与四次挥手",
+    "domain": "网络与安全",
+    "difficulty": 2,
+    "description": "网络与安全·基础知识点：TCP 三次握手与四次挥手"
+  },
+  {
+    "kp_id": "KP-04-16",
+    "name": "TLS 握手与证书链",
+    "domain": "网络与安全",
+    "difficulty": 2,
+    "description": "网络与安全·基础知识点：TLS 握手与证书链"
+  },
+  {
+    "kp_id": "KP-04-17",
+    "name": "UDP 与实时传输",
+    "domain": "网络与安全",
+    "difficulty": 2,
+    "description": "网络与安全·基础知识点：UDP 与实时传输"
+  },
+  {
+    "kp_id": "KP-04-18",
+    "name": "Web 攻防基础",
+    "domain": "网络与安全",
+    "difficulty": 2,
+    "description": "网络与安全·基础知识点：Web 攻防基础"
+  },
+  {
+    "kp_id": "KP-04-19",
+    "name": "XSS 与 CSRF 攻防",
+    "domain": "网络与安全",
+    "difficulty": 2,
+    "description": "网络与安全·基础知识点：XSS 与 CSRF 攻防"
+  },
+  {
+    "kp_id": "KP-04-20",
+    "name": "代理与反向代理",
+    "domain": "网络与安全",
+    "difficulty": 2,
+    "description": "网络与安全·基础知识点：代理与反向代理"
+  },
+  {
+    "kp_id": "KP-04-21",
+    "name": "会话与 Cookie 安全",
+    "domain": "网络与安全",
+    "difficulty": 2,
+    "description": "网络与安全·基础知识点：会话与 Cookie 安全"
+  },
+  {
+    "kp_id": "KP-04-22",
+    "name": "密码存储与哈希加盐",
+    "domain": "网络与安全",
+    "difficulty": 2,
+    "description": "网络与安全·基础知识点：密码存储与哈希加盐"
+  },
+  {
+    "kp_id": "KP-04-23",
+    "name": "漏洞扫描工具使用",
+    "domain": "网络与安全",
+    "difficulty": 2,
+    "description": "网络与安全·基础知识点：漏洞扫描工具使用"
+  },
+  {
+    "kp_id": "KP-04-24",
+    "name": "防火墙与访问控制",
+    "domain": "网络与安全",
+    "difficulty": 2,
+    "description": "网络与安全·基础知识点：防火墙与访问控制"
+  },
+  {
+    "kp_id": "KP-04-25",
+    "name": "JWT 与令牌安全",
+    "domain": "网络与安全",
+    "difficulty": 3,
+    "description": "网络与安全·进阶知识点：JWT 与令牌安全"
+  },
+  {
+    "kp_id": "KP-04-26",
+    "name": "OAuth2.0 授权流程",
+    "domain": "网络与安全",
+    "difficulty": 3,
+    "description": "网络与安全·进阶知识点：OAuth2.0 授权流程"
+  },
+  {
+    "kp_id": "KP-04-27",
+    "name": "SSO 单点登录",
+    "domain": "网络与安全",
+    "difficulty": 3,
+    "description": "网络与安全·进阶知识点：SSO 单点登录"
+  },
+  {
+    "kp_id": "KP-04-28",
+    "name": "主机加固与基线检查",
+    "domain": "网络与安全",
+    "difficulty": 3,
+    "description": "网络与安全·进阶知识点：主机加固与基线检查"
+  },
+  {
+    "kp_id": "KP-04-29",
+    "name": "代码审计基础",
+    "domain": "网络与安全",
+    "difficulty": 3,
+    "description": "网络与安全·进阶知识点：代码审计基础"
+  },
+  {
+    "kp_id": "KP-04-30",
+    "name": "入侵检测与告警",
+    "domain": "网络与安全",
+    "difficulty": 3,
+    "description": "网络与安全·进阶知识点：入侵检测与告警"
+  },
+  {
+    "kp_id": "KP-04-31",
+    "name": "安全编码规范",
+    "domain": "网络与安全",
+    "difficulty": 3,
+    "description": "网络与安全·进阶知识点：安全编码规范"
+  },
+  {
+    "kp_id": "KP-04-32",
+    "name": "密钥管理与加密实践",
+    "domain": "网络与安全",
+    "difficulty": 3,
+    "description": "网络与安全·进阶知识点：密钥管理与加密实践"
+  },
+  {
+    "kp_id": "KP-04-33",
+    "name": "日志分析与 SIEM",
+    "domain": "网络与安全",
+    "difficulty": 3,
+    "description": "网络与安全·进阶知识点：日志分析与 SIEM"
+  },
+  {
+    "kp_id": "KP-04-34",
+    "name": "权限模型 RBAC 与 ABAC",
+    "domain": "网络与安全",
+    "difficulty": 3,
+    "description": "网络与安全·进阶知识点：权限模型 RBAC 与 ABAC"
+  },
+  {
+    "kp_id": "KP-04-35",
+    "name": "渗透测试流程",
+    "domain": "网络与安全",
+    "difficulty": 3,
+    "description": "网络与安全·进阶知识点：渗透测试流程"
+  },
+  {
+    "kp_id": "KP-04-36",
+    "name": "零信任访问模型",
+    "domain": "网络与安全",
+    "difficulty": 3,
+    "description": "网络与安全·进阶知识点：零信任访问模型"
+  },
+  {
+    "kp_id": "KP-04-37",
+    "name": "DevSecOps 与安全左移",
+    "domain": "网络与安全",
+    "difficulty": 4,
+    "description": "网络与安全·高级知识点：DevSecOps 与安全左移"
+  },
+  {
+    "kp_id": "KP-04-38",
+    "name": "供应链安全与 SBOM",
+    "domain": "网络与安全",
+    "difficulty": 4,
+    "description": "网络与安全·高级知识点：供应链安全与 SBOM"
+  },
+  {
+    "kp_id": "KP-04-39",
+    "name": "内网渗透与横向移动",
+    "domain": "网络与安全",
+    "difficulty": 4,
+    "description": "网络与安全·高级知识点：内网渗透与横向移动"
+  },
+  {
+    "kp_id": "KP-04-40",
+    "name": "威胁情报与关联分析",
+    "domain": "网络与安全",
+    "difficulty": 4,
+    "description": "网络与安全·高级知识点：威胁情报与关联分析"
+  },
+  {
+    "kp_id": "KP-04-41",
+    "name": "安全运营中心建设",
+    "domain": "网络与安全",
+    "difficulty": 4,
+    "description": "网络与安全·高级知识点：安全运营中心建设"
+  },
+  {
+    "kp_id": "KP-04-42",
+    "name": "容器与 Kubernetes 安全",
+    "domain": "网络与安全",
+    "difficulty": 4,
+    "description": "网络与安全·高级知识点：容器与 Kubernetes 安全"
+  },
+  {
+    "kp_id": "KP-04-43",
+    "name": "应急响应与电子取证",
+    "domain": "网络与安全",
+    "difficulty": 4,
+    "description": "网络与安全·高级知识点：应急响应与电子取证"
+  },
+  {
+    "kp_id": "KP-04-44",
+    "name": "恶意流量识别",
+    "domain": "网络与安全",
+    "difficulty": 4,
+    "description": "网络与安全·高级知识点：恶意流量识别"
+  },
+  {
+    "kp_id": "KP-04-45",
+    "name": "攻击面管理与资产测绘",
+    "domain": "网络与安全",
+    "difficulty": 4,
+    "description": "网络与安全·高级知识点：攻击面管理与资产测绘"
+  },
+  {
+    "kp_id": "KP-04-46",
+    "name": "攻防演练与红蓝对抗",
+    "domain": "网络与安全",
+    "difficulty": 4,
+    "description": "网络与安全·高级知识点：攻防演练与红蓝对抗"
+  },
+  {
+    "kp_id": "KP-04-47",
+    "name": "数据脱敏与隐私保护",
+    "domain": "网络与安全",
+    "difficulty": 4,
+    "description": "网络与安全·高级知识点：数据脱敏与隐私保护"
+  },
+  {
+    "kp_id": "KP-04-48",
+    "name": "等级保护与合规要求",
+    "domain": "网络与安全",
+    "difficulty": 4,
+    "description": "网络与安全·高级知识点：等级保护与合规要求"
+  },
+  {
+    "kp_id": "KP-04-49",
+    "name": "APT 攻击分析与防御",
+    "domain": "网络与安全",
+    "difficulty": 5,
+    "description": "网络与安全·专家级知识点：APT 攻击分析与防御"
+  },
+  {
+    "kp_id": "KP-04-50",
+    "name": "云原生安全架构设计",
+    "domain": "网络与安全",
+    "difficulty": 5,
+    "description": "网络与安全·专家级知识点：云原生安全架构设计"
+  },
+  {
+    "kp_id": "KP-04-51",
+    "name": "安全事件管理与复盘",
+    "domain": "网络与安全",
+    "difficulty": 5,
+    "description": "网络与安全·专家级知识点：安全事件管理与复盘"
+  },
+  {
+    "kp_id": "KP-04-52",
+    "name": "安全产品选型与集成",
+    "domain": "网络与安全",
+    "difficulty": 5,
+    "description": "网络与安全·专家级知识点：安全产品选型与集成"
+  },
+  {
+    "kp_id": "KP-04-53",
+    "name": "安全体系建设与治理",
+    "domain": "网络与安全",
+    "difficulty": 5,
+    "description": "网络与安全·专家级知识点：安全体系建设与治理"
+  },
+  {
+    "kp_id": "KP-04-54",
+    "name": "安全合规审计实践",
+    "domain": "网络与安全",
+    "difficulty": 5,
+    "description": "网络与安全·专家级知识点：安全合规审计实践"
+  },
+  {
+    "kp_id": "KP-04-55",
+    "name": "安全风险评估与量化",
+    "domain": "网络与安全",
+    "difficulty": 5,
+    "description": "网络与安全·专家级知识点：安全风险评估与量化"
+  },
+  {
+    "kp_id": "KP-04-56",
+    "name": "密码学协议深入",
+    "domain": "网络与安全",
+    "difficulty": 5,
+    "description": "网络与安全·专家级知识点：密码学协议深入"
+  },
+  {
+    "kp_id": "KP-04-57",
+    "name": "数据安全治理体系",
+    "domain": "网络与安全",
+    "difficulty": 5,
+    "description": "网络与安全·专家级知识点：数据安全治理体系"
+  },
+  {
+    "kp_id": "KP-04-58",
+    "name": "网络攻防对抗策略",
+    "domain": "网络与安全",
+    "difficulty": 5,
+    "description": "网络与安全·专家级知识点：网络攻防对抗策略"
+  },
+  {
+    "kp_id": "KP-04-59",
+    "name": "零信任架构落地",
+    "domain": "网络与安全",
+    "difficulty": 5,
+    "description": "网络与安全·专家级知识点：零信任架构落地"
+  },
+  {
+    "kp_id": "KP-04-60",
+    "name": "高级威胁狩猎",
+    "domain": "网络与安全",
+    "difficulty": 5,
+    "description": "网络与安全·专家级知识点：高级威胁狩猎"
+  },
+  {
+    "kp_id": "KP-05-01",
+    "name": "业务数据分析常识",
+    "domain": "产品与职场",
+    "difficulty": 1,
+    "description": "产品与职场·入门知识点：业务数据分析常识"
+  },
+  {
+    "kp_id": "KP-05-02",
+    "name": "交互稿评审",
+    "domain": "产品与职场",
+    "difficulty": 1,
+    "description": "产品与职场·入门知识点：交互稿评审"
+  },
+  {
+    "kp_id": "KP-05-03",
+    "name": "产品经理职责认知",
+    "domain": "产品与职场",
+    "difficulty": 1,
+    "description": "产品与职场·入门知识点：产品经理职责认知"
+  },
+  {
+    "kp_id": "KP-05-04",
+    "name": "流程图与原型工具",
+    "domain": "产品与职场",
+    "difficulty": 1,
+    "description": "产品与职场·入门知识点：流程图与原型工具"
+  },
+  {
+    "kp_id": "KP-05-05",
+    "name": "用户故事编写",
+    "domain": "产品与职场",
+    "difficulty": 1,
+    "description": "产品与职场·入门知识点：用户故事编写"
+  },
+  {
+    "kp_id": "KP-05-06",
+    "name": "用户访谈与记录",
+    "domain": "产品与职场",
+    "difficulty": 1,
+    "description": "产品与职场·入门知识点：用户访谈与记录"
+  },
+  {
+    "kp_id": "KP-05-07",
+    "name": "竞品分析",
+    "domain": "产品与职场",
+    "difficulty": 1,
+    "description": "产品与职场·入门知识点：竞品分析"
+  },
+  {
+    "kp_id": "KP-05-08",
+    "name": "结构化表达",
+    "domain": "产品与职场",
+    "difficulty": 1,
+    "description": "产品与职场·入门知识点：结构化表达"
+  },
+  {
+    "kp_id": "KP-05-09",
+    "name": "职场时间管理",
+    "domain": "产品与职场",
+    "difficulty": 1,
+    "description": "产品与职场·入门知识点：职场时间管理"
+  },
+  {
+    "kp_id": "KP-05-10",
+    "name": "需求池管理",
+    "domain": "产品与职场",
+    "difficulty": 1,
+    "description": "产品与职场·入门知识点：需求池管理"
+  },
+  {
+    "kp_id": "KP-05-11",
+    "name": "需求调研方法",
+    "domain": "产品与职场",
+    "difficulty": 1,
+    "description": "产品与职场·入门知识点：需求调研方法"
+  },
+  {
+    "kp_id": "KP-05-12",
+    "name": "项目沟通与会议纪要",
+    "domain": "产品与职场",
+    "difficulty": 1,
+    "description": "产品与职场·入门知识点：项目沟通与会议纪要"
+  },
+  {
+    "kp_id": "KP-05-13",
+    "name": "A/B 测试设计",
+    "domain": "产品与职场",
+    "difficulty": 2,
+    "description": "产品与职场·基础知识点：A/B 测试设计"
+  },
+  {
+    "kp_id": "KP-05-14",
+    "name": "MVP 与迭代规划",
+    "domain": "产品与职场",
+    "difficulty": 2,
+    "description": "产品与职场·基础知识点：MVP 与迭代规划"
+  },
+  {
+    "kp_id": "KP-05-15",
+    "name": "商业画布与商业模式",
+    "domain": "产品与职场",
+    "difficulty": 2,
+    "description": "产品与职场·基础知识点：商业画布与商业模式"
+  },
+  {
+    "kp_id": "KP-05-16",
+    "name": "定价与商业化策略",
+    "domain": "产品与职场",
+    "difficulty": 2,
+    "description": "产品与职场·基础知识点：定价与商业化策略"
+  },
+  {
+    "kp_id": "KP-05-17",
+    "name": "数据分析看板搭建",
+    "domain": "产品与职场",
+    "difficulty": 2,
+    "description": "产品与职场·基础知识点：数据分析看板搭建"
+  },
+  {
+    "kp_id": "KP-05-18",
+    "name": "数据埋点与指标定义",
+    "domain": "产品与职场",
+    "difficulty": 2,
+    "description": "产品与职场·基础知识点：数据埋点与指标定义"
+  },
+  {
+    "kp_id": "KP-05-19",
+    "name": "汇报与说服技巧",
+    "domain": "产品与职场",
+    "difficulty": 2,
+    "description": "产品与职场·基础知识点：汇报与说服技巧"
+  },
+  {
+    "kp_id": "KP-05-20",
+    "name": "漏斗分析与转化",
+    "domain": "产品与职场",
+    "difficulty": 2,
+    "description": "产品与职场·基础知识点：漏斗分析与转化"
+  },
+  {
+    "kp_id": "KP-05-21",
+    "name": "用户旅程地图",
+    "domain": "产品与职场",
+    "difficulty": 2,
+    "description": "产品与职场·基础知识点：用户旅程地图"
+  },
+  {
+    "kp_id": "KP-05-22",
+    "name": "用户画像与分群",
+    "domain": "产品与职场",
+    "difficulty": 2,
+    "description": "产品与职场·基础知识点：用户画像与分群"
+  },
+  {
+    "kp_id": "KP-05-23",
+    "name": "跨部门协作推进",
+    "domain": "产品与职场",
+    "difficulty": 2,
+    "description": "产品与职场·基础知识点：跨部门协作推进"
+  },
+  {
+    "kp_id": "KP-05-24",
+    "name": "需求优先级排序",
+    "domain": "产品与职场",
+    "difficulty": 2,
+    "description": "产品与职场·基础知识点：需求优先级排序"
+  },
+  {
+    "kp_id": "KP-05-25",
+    "name": "B 端产品与流程梳理",
+    "domain": "产品与职场",
+    "difficulty": 3,
+    "description": "产品与职场·进阶知识点：B 端产品与流程梳理"
+  },
+  {
+    "kp_id": "KP-05-26",
+    "name": "个性化推荐产品设计",
+    "domain": "产品与职场",
+    "difficulty": 3,
+    "description": "产品与职场·进阶知识点：个性化推荐产品设计"
+  },
+  {
+    "kp_id": "KP-05-27",
+    "name": "交易与支付产品设计",
+    "domain": "产品与职场",
+    "difficulty": 3,
+    "description": "产品与职场·进阶知识点：交易与支付产品设计"
+  },
+  {
+    "kp_id": "KP-05-28",
+    "name": "会员与订阅体系设计",
+    "domain": "产品与职场",
+    "difficulty": 3,
+    "description": "产品与职场·进阶知识点：会员与订阅体系设计"
+  },
+  {
+    "kp_id": "KP-05-29",
+    "name": "增长模型与增长黑客",
+    "domain": "产品与职场",
+    "difficulty": 3,
+    "description": "产品与职场·进阶知识点：增长模型与增长黑客"
+  },
+  {
+    "kp_id": "KP-05-30",
+    "name": "平台与双边市场设计",
+    "domain": "产品与职场",
+    "difficulty": 3,
+    "description": "产品与职场·进阶知识点：平台与双边市场设计"
+  },
+  {
+    "kp_id": "KP-05-31",
+    "name": "指标体系搭建",
+    "domain": "产品与职场",
+    "difficulty": 3,
+    "description": "产品与职场·进阶知识点：指标体系搭建"
+  },
+  {
+    "kp_id": "KP-05-32",
+    "name": "数据驱动决策",
+    "domain": "产品与职场",
+    "difficulty": 3,
+    "description": "产品与职场·进阶知识点：数据驱动决策"
+  },
+  {
+    "kp_id": "KP-05-33",
+    "name": "用户反馈闭环运营",
+    "domain": "产品与职场",
+    "difficulty": 3,
+    "description": "产品与职场·进阶知识点：用户反馈闭环运营"
+  },
+  {
+    "kp_id": "KP-05-34",
+    "name": "用户留存与生命周期",
+    "domain": "产品与职场",
+    "difficulty": 3,
+    "description": "产品与职场·进阶知识点：用户留存与生命周期"
+  },
+  {
+    "kp_id": "KP-05-35",
+    "name": "需求评审与风险管控",
+    "domain": "产品与职场",
+    "difficulty": 3,
+    "description": "产品与职场·进阶知识点：需求评审与风险管控"
+  },
+  {
+    "kp_id": "KP-05-36",
+    "name": "项目管理与排期",
+    "domain": "产品与职场",
+    "difficulty": 3,
+    "description": "产品与职场·进阶知识点：项目管理与排期"
+  },
+  {
+    "kp_id": "KP-05-37",
+    "name": "产品战略与路线图",
+    "domain": "产品与职场",
+    "difficulty": 4,
+    "description": "产品与职场·高级知识点：产品战略与路线图"
+  },
+  {
+    "kp_id": "KP-05-38",
+    "name": "产品架构与信息架构",
+    "domain": "产品与职场",
+    "difficulty": 4,
+    "description": "产品与职场·高级知识点：产品架构与信息架构"
+  },
+  {
+    "kp_id": "KP-05-39",
+    "name": "单位经济模型与测算",
+    "domain": "产品与职场",
+    "difficulty": 4,
+    "description": "产品与职场·高级知识点：单位经济模型与测算"
+  },
+  {
+    "kp_id": "KP-05-40",
+    "name": "可用性测试与调研",
+    "domain": "产品与职场",
+    "difficulty": 4,
+    "description": "产品与职场·高级知识点：可用性测试与调研"
+  },
+  {
+    "kp_id": "KP-05-41",
+    "name": "商业分析与财务测算",
+    "domain": "产品与职场",
+    "difficulty": 4,
+    "description": "产品与职场·高级知识点：商业分析与财务测算"
+  },
+  {
+    "kp_id": "KP-05-42",
+    "name": "增长实验体系",
+    "domain": "产品与职场",
+    "difficulty": 4,
+    "description": "产品与职场·高级知识点：增长实验体系"
+  },
+  {
+    "kp_id": "KP-05-43",
+    "name": "复杂需求拆解",
+    "domain": "产品与职场",
+    "difficulty": 4,
+    "description": "产品与职场·高级知识点：复杂需求拆解"
+  },
+  {
+    "kp_id": "KP-05-44",
+    "name": "渠道投放与获客",
+    "domain": "产品与职场",
+    "difficulty": 4,
+    "description": "产品与职场·高级知识点：渠道投放与获客"
+  },
+  {
+    "kp_id": "KP-05-45",
+    "name": "灰度发布与版本管理",
+    "domain": "产品与职场",
+    "difficulty": 4,
+    "description": "产品与职场·高级知识点：灰度发布与版本管理"
+  },
+  {
+    "kp_id": "KP-05-46",
+    "name": "组织协作与影响力",
+    "domain": "产品与职场",
+    "difficulty": 4,
+    "description": "产品与职场·高级知识点：组织协作与影响力"
+  },
+  {
+    "kp_id": "KP-05-47",
+    "name": "自助式数据看板",
+    "domain": "产品与职场",
+    "difficulty": 4,
+    "description": "产品与职场·高级知识点：自助式数据看板"
+  },
+  {
+    "kp_id": "KP-05-48",
+    "name": "运营活动策划",
+    "domain": "产品与职场",
+    "difficulty": 4,
+    "description": "产品与职场·高级知识点：运营活动策划"
+  },
+  {
+    "kp_id": "KP-05-49",
+    "name": "业务增长与第二曲线",
+    "domain": "产品与职场",
+    "difficulty": 5,
+    "description": "产品与职场·专家级知识点：业务增长与第二曲线"
+  },
+  {
+    "kp_id": "KP-05-50",
+    "name": "产品组合与投资决策",
+    "domain": "产品与职场",
+    "difficulty": 5,
+    "description": "产品与职场·专家级知识点：产品组合与投资决策"
+  },
+  {
+    "kp_id": "KP-05-51",
+    "name": "产品负责人能力模型",
+    "domain": "产品与职场",
+    "difficulty": 5,
+    "description": "产品与职场·专家级知识点：产品负责人能力模型"
+  },
+  {
+    "kp_id": "KP-05-52",
+    "name": "商业化从 0 到 1",
+    "domain": "产品与职场",
+    "difficulty": 5,
+    "description": "产品与职场·专家级知识点：商业化从 0 到 1"
+  },
+  {
+    "kp_id": "KP-05-53",
+    "name": "平台生态与开放能力",
+    "domain": "产品与职场",
+    "difficulty": 5,
+    "description": "产品与职场·专家级知识点：平台生态与开放能力"
+  },
+  {
+    "kp_id": "KP-05-54",
+    "name": "战略拆解与目标对齐",
+    "domain": "产品与职场",
+    "difficulty": 5,
+    "description": "产品与职场·专家级知识点：战略拆解与目标对齐"
+  },
+  {
+    "kp_id": "KP-05-55",
+    "name": "数字化转型方法论",
+    "domain": "产品与职场",
+    "difficulty": 5,
+    "description": "产品与职场·专家级知识点：数字化转型方法论"
+  },
+  {
+    "kp_id": "KP-05-56",
+    "name": "数据驱动组织建设",
+    "domain": "产品与职场",
+    "difficulty": 5,
+    "description": "产品与职场·专家级知识点：数据驱动组织建设"
+  },
+  {
+    "kp_id": "KP-05-57",
+    "name": "用户价值与商业价值平衡",
+    "domain": "产品与职场",
+    "difficulty": 5,
+    "description": "产品与职场·专家级知识点：用户价值与商业价值平衡"
+  },
+  {
+    "kp_id": "KP-05-58",
+    "name": "组织管理与团队建设",
+    "domain": "产品与职场",
+    "difficulty": 5,
+    "description": "产品与职场·专家级知识点：组织管理与团队建设"
+  },
+  {
+    "kp_id": "KP-05-59",
+    "name": "行业趋势与竞争战略",
+    "domain": "产品与职场",
+    "difficulty": 5,
+    "description": "产品与职场·专家级知识点：行业趋势与竞争战略"
+  },
+  {
+    "kp_id": "KP-05-60",
+    "name": "高阶谈判与商务沟通",
+    "domain": "产品与职场",
+    "difficulty": 5,
+    "description": "产品与职场·专家级知识点：高阶谈判与商务沟通"
+  },
+  {
+    "kp_id": "KP-06-01",
+    "name": "一般现在时",
+    "domain": "语言学习",
+    "difficulty": 1,
+    "description": "语言学习·入门知识点：一般现在时"
+  },
+  {
+    "kp_id": "KP-06-02",
+    "name": "一般疑问句",
+    "domain": "语言学习",
+    "difficulty": 1,
+    "description": "语言学习·入门知识点：一般疑问句"
+  },
+  {
+    "kp_id": "KP-06-03",
+    "name": "一般过去时",
+    "domain": "语言学习",
+    "difficulty": 1,
+    "description": "语言学习·入门知识点：一般过去时"
+  },
+  {
+    "kp_id": "KP-06-04",
+    "name": "介词与固定搭配",
+    "domain": "语言学习",
+    "difficulty": 1,
+    "description": "语言学习·入门知识点：介词与固定搭配"
+  },
+  {
+    "kp_id": "KP-06-05",
+    "name": "名词与冠词用法",
+    "domain": "语言学习",
+    "difficulty": 1,
+    "description": "语言学习·入门知识点：名词与冠词用法"
+  },
+  {
+    "kp_id": "KP-06-06",
+    "name": "基础句型结构",
+    "domain": "语言学习",
+    "difficulty": 1,
+    "description": "语言学习·入门知识点：基础句型结构"
+  },
+  {
+    "kp_id": "KP-06-07",
+    "name": "基础核心词汇",
+    "domain": "语言学习",
+    "difficulty": 1,
+    "description": "语言学习·入门知识点：基础核心词汇"
+  },
+  {
+    "kp_id": "KP-06-08",
+    "name": "常用短语搭配",
+    "domain": "语言学习",
+    "difficulty": 1,
+    "description": "语言学习·入门知识点：常用短语搭配"
+  },
+  {
+    "kp_id": "KP-06-09",
+    "name": "日常问候与寒暄",
+    "domain": "语言学习",
+    "difficulty": 1,
+    "description": "语言学习·入门知识点：日常问候与寒暄"
+  },
+  {
+    "kp_id": "KP-06-10",
+    "name": "自我介绍表达",
+    "domain": "语言学习",
+    "difficulty": 1,
+    "description": "语言学习·入门知识点：自我介绍表达"
+  },
+  {
+    "kp_id": "KP-06-11",
+    "name": "连读与弱读",
+    "domain": "语言学习",
+    "difficulty": 1,
+    "description": "语言学习·入门知识点：连读与弱读"
+  },
+  {
+    "kp_id": "KP-06-12",
+    "name": "音标与发音规则",
+    "domain": "语言学习",
+    "difficulty": 1,
+    "description": "语言学习·入门知识点：音标与发音规则"
+  },
+  {
+    "kp_id": "KP-06-13",
+    "name": "听力精听训练",
+    "domain": "语言学习",
+    "difficulty": 2,
+    "description": "语言学习·基础知识点：听力精听训练"
+  },
+  {
+    "kp_id": "KP-06-14",
+    "name": "商务邮件写作",
+    "domain": "语言学习",
+    "difficulty": 2,
+    "description": "语言学习·基础知识点：商务邮件写作"
+  },
+  {
+    "kp_id": "KP-06-15",
+    "name": "定语从句",
+    "domain": "语言学习",
+    "difficulty": 2,
+    "description": "语言学习·基础知识点：定语从句"
+  },
+  {
+    "kp_id": "KP-06-16",
+    "name": "常用连接词",
+    "domain": "语言学习",
+    "difficulty": 2,
+    "description": "语言学习·基础知识点：常用连接词"
+  },
+  {
+    "kp_id": "KP-06-17",
+    "name": "状语从句",
+    "domain": "语言学习",
+    "difficulty": 2,
+    "description": "语言学习·基础知识点：状语从句"
+  },
+  {
+    "kp_id": "KP-06-18",
+    "name": "现在完成时",
+    "domain": "语言学习",
+    "difficulty": 2,
+    "description": "语言学习·基础知识点：现在完成时"
+  },
+  {
+    "kp_id": "KP-06-19",
+    "name": "电话与会议英语",
+    "domain": "语言学习",
+    "difficulty": 2,
+    "description": "语言学习·基础知识点：电话与会议英语"
+  },
+  {
+    "kp_id": "KP-06-20",
+    "name": "被动语态",
+    "domain": "语言学习",
+    "difficulty": 2,
+    "description": "语言学习·基础知识点：被动语态"
+  },
+  {
+    "kp_id": "KP-06-21",
+    "name": "词根词缀记忆法",
+    "domain": "语言学习",
+    "difficulty": 2,
+    "description": "语言学习·基础知识点：词根词缀记忆法"
+  },
+  {
+    "kp_id": "KP-06-22",
+    "name": "近义词辨析",
+    "domain": "语言学习",
+    "difficulty": 2,
+    "description": "语言学习·基础知识点：近义词辨析"
+  },
+  {
+    "kp_id": "KP-06-23",
+    "name": "阅读理解技巧",
+    "domain": "语言学习",
+    "difficulty": 2,
+    "description": "语言学习·基础知识点：阅读理解技巧"
+  },
+  {
+    "kp_id": "KP-06-24",
+    "name": "音标拼读与重音",
+    "domain": "语言学习",
+    "difficulty": 2,
+    "description": "语言学习·基础知识点：音标拼读与重音"
+  },
+  {
+    "kp_id": "KP-06-25",
+    "name": "同义替换与改写",
+    "domain": "语言学习",
+    "difficulty": 3,
+    "description": "语言学习·进阶知识点：同义替换与改写"
+  },
+  {
+    "kp_id": "KP-06-26",
+    "name": "商务演讲与展示",
+    "domain": "语言学习",
+    "difficulty": 3,
+    "description": "语言学习·进阶知识点：商务演讲与展示"
+  },
+  {
+    "kp_id": "KP-06-27",
+    "name": "学术写作结构",
+    "domain": "语言学习",
+    "difficulty": 3,
+    "description": "语言学习·进阶知识点：学术写作结构"
+  },
+  {
+    "kp_id": "KP-06-28",
+    "name": "学术阅读精读",
+    "domain": "语言学习",
+    "difficulty": 3,
+    "description": "语言学习·进阶知识点：学术阅读精读"
+  },
+  {
+    "kp_id": "KP-06-29",
+    "name": "托福听力笔记法",
+    "domain": "语言学习",
+    "difficulty": 3,
+    "description": "语言学习·进阶知识点：托福听力笔记法"
+  },
+  {
+    "kp_id": "KP-06-30",
+    "name": "段落与论证逻辑",
+    "domain": "语言学习",
+    "difficulty": 3,
+    "description": "语言学习·进阶知识点：段落与论证逻辑"
+  },
+  {
+    "kp_id": "KP-06-31",
+    "name": "语料库与搭配查询",
+    "domain": "语言学习",
+    "difficulty": 3,
+    "description": "语言学习·进阶知识点：语料库与搭配查询"
+  },
+  {
+    "kp_id": "KP-06-32",
+    "name": "谈判与说服英语",
+    "domain": "语言学习",
+    "difficulty": 3,
+    "description": "语言学习·进阶知识点：谈判与说服英语"
+  },
+  {
+    "kp_id": "KP-06-33",
+    "name": "跨文化沟通礼仪",
+    "domain": "语言学习",
+    "difficulty": 3,
+    "description": "语言学习·进阶知识点：跨文化沟通礼仪"
+  },
+  {
+    "kp_id": "KP-06-34",
+    "name": "雅思写作 Task 2",
+    "domain": "语言学习",
+    "difficulty": 3,
+    "description": "语言学习·进阶知识点：雅思写作 Task 2"
+  },
+  {
+    "kp_id": "KP-06-35",
+    "name": "雅思口语 Part 3",
+    "domain": "语言学习",
+    "difficulty": 3,
+    "description": "语言学习·进阶知识点：雅思口语 Part 3"
+  },
+  {
+    "kp_id": "KP-06-36",
+    "name": "面试英语表达",
+    "domain": "语言学习",
+    "difficulty": 3,
+    "description": "语言学习·进阶知识点：面试英语表达"
+  },
+  {
+    "kp_id": "KP-06-37",
+    "name": "会议主持与纪要英语",
+    "domain": "语言学习",
+    "difficulty": 4,
+    "description": "语言学习·高级知识点：会议主持与纪要英语"
+  },
+  {
+    "kp_id": "KP-06-38",
+    "name": "口译笔记法",
+    "domain": "语言学习",
+    "difficulty": 4,
+    "description": "语言学习·高级知识点：口译笔记法"
+  },
+  {
+    "kp_id": "KP-06-39",
+    "name": "商务谈判策略英语",
+    "domain": "语言学习",
+    "difficulty": 4,
+    "description": "语言学习·高级知识点：商务谈判策略英语"
+  },
+  {
+    "kp_id": "KP-06-40",
+    "name": "学术论文写作规范",
+    "domain": "语言学习",
+    "difficulty": 4,
+    "description": "语言学习·高级知识点：学术论文写作规范"
+  },
+  {
+    "kp_id": "KP-06-41",
+    "name": "学术语气与高级句型",
+    "domain": "语言学习",
+    "difficulty": 4,
+    "description": "语言学习·高级知识点：学术语气与高级句型"
+  },
+  {
+    "kp_id": "KP-06-42",
+    "name": "技术文档写作",
+    "domain": "语言学习",
+    "difficulty": 4,
+    "description": "语言学习·高级知识点：技术文档写作"
+  },
+  {
+    "kp_id": "KP-06-43",
+    "name": "文献综述写作",
+    "domain": "语言学习",
+    "difficulty": 4,
+    "description": "语言学习·高级知识点：文献综述写作"
+  },
+  {
+    "kp_id": "KP-06-44",
+    "name": "笔译与本地化",
+    "domain": "语言学习",
+    "difficulty": 4,
+    "description": "语言学习·高级知识点：笔译与本地化"
+  },
+  {
+    "kp_id": "KP-06-45",
+    "name": "英文摘要与结论",
+    "domain": "语言学习",
+    "difficulty": 4,
+    "description": "语言学习·高级知识点：英文摘要与结论"
+  },
+  {
+    "kp_id": "KP-06-46",
+    "name": "英语演讲修辞",
+    "domain": "语言学习",
+    "difficulty": 4,
+    "description": "语言学习·高级知识点：英语演讲修辞"
+  },
+  {
+    "kp_id": "KP-06-47",
+    "name": "行业术语与专业表达",
+    "domain": "语言学习",
+    "difficulty": 4,
+    "description": "语言学习·高级知识点：行业术语与专业表达"
+  },
+  {
+    "kp_id": "KP-06-48",
+    "name": "跨文化商务沟通",
+    "domain": "语言学习",
+    "difficulty": 4,
+    "description": "语言学习·高级知识点：跨文化商务沟通"
+  },
+  {
+    "kp_id": "KP-06-49",
+    "name": "专业领域术语体系",
+    "domain": "语言学习",
+    "difficulty": 5,
+    "description": "语言学习·专家级知识点：专业领域术语体系"
+  },
+  {
+    "kp_id": "KP-06-50",
+    "name": "交替传译实战",
+    "domain": "语言学习",
+    "difficulty": 5,
+    "description": "语言学习·专家级知识点：交替传译实战"
+  },
+  {
+    "kp_id": "KP-06-51",
+    "name": "双语写作与编辑",
+    "domain": "语言学习",
+    "difficulty": 5,
+    "description": "语言学习·专家级知识点：双语写作与编辑"
+  },
+  {
+    "kp_id": "KP-06-52",
+    "name": "同声传译基础",
+    "domain": "语言学习",
+    "difficulty": 5,
+    "description": "语言学习·专家级知识点：同声传译基础"
+  },
+  {
+    "kp_id": "KP-06-53",
+    "name": "国际商务合规沟通",
+    "domain": "语言学习",
+    "difficulty": 5,
+    "description": "语言学习·专家级知识点：国际商务合规沟通"
+  },
+  {
+    "kp_id": "KP-06-54",
+    "name": "学术会议主持与研讨",
+    "domain": "语言学习",
+    "difficulty": 5,
+    "description": "语言学习·专家级知识点：学术会议主持与研讨"
+  },
+  {
+    "kp_id": "KP-06-55",
+    "name": "学术出版与投稿",
+    "domain": "语言学习",
+    "difficulty": 5,
+    "description": "语言学习·专家级知识点：学术出版与投稿"
+  },
+  {
+    "kp_id": "KP-06-56",
+    "name": "英语教学法与课程设计",
+    "domain": "语言学习",
+    "difficulty": 5,
+    "description": "语言学习·专家级知识点：英语教学法与课程设计"
+  },
+  {
+    "kp_id": "KP-06-57",
+    "name": "语料库语言学应用",
+    "domain": "语言学习",
+    "difficulty": 5,
+    "description": "语言学习·专家级知识点：语料库语言学应用"
+  },
+  {
+    "kp_id": "KP-06-58",
+    "name": "语言测试与评估",
+    "domain": "语言学习",
+    "difficulty": 5,
+    "description": "语言学习·专家级知识点：语言测试与评估"
+  },
+  {
+    "kp_id": "KP-06-59",
+    "name": "跨文化团队管理沟通",
+    "domain": "语言学习",
+    "difficulty": 5,
+    "description": "语言学习·专家级知识点：跨文化团队管理沟通"
+  },
+  {
+    "kp_id": "KP-06-60",
+    "name": "高管沟通与路演英语",
+    "domain": "语言学习",
+    "difficulty": 5,
+    "description": "语言学习·专家级知识点：高管沟通与路演英语"
+  },
+  {
+    "kp_id": "KP-07-01",
+    "name": "一元二次方程",
+    "domain": "数学基础",
+    "difficulty": 1,
+    "description": "数学基础·入门知识点：一元二次方程"
+  },
+  {
+    "kp_id": "KP-07-02",
+    "name": "三角函数应用",
+    "domain": "数学基础",
+    "difficulty": 1,
+    "description": "数学基础·入门知识点：三角函数应用"
+  },
+  {
+    "kp_id": "KP-07-03",
+    "name": "函数与极限",
+    "domain": "数学基础",
+    "difficulty": 1,
+    "description": "数学基础·入门知识点：函数与极限"
+  },
+  {
+    "kp_id": "KP-07-04",
+    "name": "单位与量纲",
+    "domain": "数学基础",
+    "difficulty": 1,
+    "description": "数学基础·入门知识点：单位与量纲"
+  },
+  {
+    "kp_id": "KP-07-05",
+    "name": "向量与坐标几何",
+    "domain": "数学基础",
+    "difficulty": 1,
+    "description": "数学基础·入门知识点：向量与坐标几何"
+  },
+  {
+    "kp_id": "KP-07-06",
+    "name": "导数与微分",
+    "domain": "数学基础",
+    "difficulty": 1,
+    "description": "数学基础·入门知识点：导数与微分"
+  },
+  {
+    "kp_id": "KP-07-07",
+    "name": "排列组合初步",
+    "domain": "数学基础",
+    "difficulty": 1,
+    "description": "数学基础·入门知识点：排列组合初步"
+  },
+  {
+    "kp_id": "KP-07-08",
+    "name": "数列与级数",
+    "domain": "数学基础",
+    "difficulty": 1,
+    "description": "数学基础·入门知识点：数列与级数"
+  },
+  {
+    "kp_id": "KP-07-09",
+    "name": "数学归纳法",
+    "domain": "数学基础",
+    "difficulty": 1,
+    "description": "数学基础·入门知识点：数学归纳法"
+  },
+  {
+    "kp_id": "KP-07-10",
+    "name": "数学符号与表达",
+    "domain": "数学基础",
+    "difficulty": 1,
+    "description": "数学基础·入门知识点：数学符号与表达"
+  },
+  {
+    "kp_id": "KP-07-11",
+    "name": "积分与面积",
+    "domain": "数学基础",
+    "difficulty": 1,
+    "description": "数学基础·入门知识点：积分与面积"
+  },
+  {
+    "kp_id": "KP-07-12",
+    "name": "集合与逻辑基础",
+    "domain": "数学基础",
+    "difficulty": 1,
+    "description": "数学基础·入门知识点：集合与逻辑基础"
+  },
+  {
+    "kp_id": "KP-07-13",
+    "name": "向量空间与基",
+    "domain": "数学基础",
+    "difficulty": 2,
+    "description": "数学基础·基础知识点：向量空间与基"
+  },
+  {
+    "kp_id": "KP-07-14",
+    "name": "多元函数偏导",
+    "domain": "数学基础",
+    "difficulty": 2,
+    "description": "数学基础·基础知识点：多元函数偏导"
+  },
+  {
+    "kp_id": "KP-07-15",
+    "name": "常见离散分布",
+    "domain": "数学基础",
+    "difficulty": 2,
+    "description": "数学基础·基础知识点：常见离散分布"
+  },
+  {
+    "kp_id": "KP-07-16",
+    "name": "常见连续分布",
+    "domain": "数学基础",
+    "difficulty": 2,
+    "description": "数学基础·基础知识点：常见连续分布"
+  },
+  {
+    "kp_id": "KP-07-17",
+    "name": "数学期望与方差",
+    "domain": "数学基础",
+    "difficulty": 2,
+    "description": "数学基础·基础知识点：数学期望与方差"
+  },
+  {
+    "kp_id": "KP-07-18",
+    "name": "条件概率与贝叶斯公式",
+    "domain": "数学基础",
+    "difficulty": 2,
+    "description": "数学基础·基础知识点：条件概率与贝叶斯公式"
+  },
+  {
+    "kp_id": "KP-07-19",
+    "name": "梯度与方向导数",
+    "domain": "数学基础",
+    "difficulty": 2,
+    "description": "数学基础·基础知识点：梯度与方向导数"
+  },
+  {
+    "kp_id": "KP-07-20",
+    "name": "特征值与特征向量",
+    "domain": "数学基础",
+    "difficulty": 2,
+    "description": "数学基础·基础知识点：特征值与特征向量"
+  },
+  {
+    "kp_id": "KP-07-21",
+    "name": "矩阵运算与初等变换",
+    "domain": "数学基础",
+    "difficulty": 2,
+    "description": "数学基础·基础知识点：矩阵运算与初等变换"
+  },
+  {
+    "kp_id": "KP-07-22",
+    "name": "行列式与逆矩阵",
+    "domain": "数学基础",
+    "difficulty": 2,
+    "description": "数学基础·基础知识点：行列式与逆矩阵"
+  },
+  {
+    "kp_id": "KP-07-23",
+    "name": "随机事件与概率",
+    "domain": "数学基础",
+    "difficulty": 2,
+    "description": "数学基础·基础知识点：随机事件与概率"
+  },
+  {
+    "kp_id": "KP-07-24",
+    "name": "随机变量与分布",
+    "domain": "数学基础",
+    "difficulty": 2,
+    "description": "数学基础·基础知识点：随机变量与分布"
+  },
+  {
+    "kp_id": "KP-07-25",
+    "name": "二次型与正定性",
+    "domain": "数学基础",
+    "difficulty": 3,
+    "description": "数学基础·进阶知识点：二次型与正定性"
+  },
+  {
+    "kp_id": "KP-07-26",
+    "name": "假设检验原理",
+    "domain": "数学基础",
+    "difficulty": 3,
+    "description": "数学基础·进阶知识点：假设检验原理"
+  },
+  {
+    "kp_id": "KP-07-27",
+    "name": "凸集与凸函数",
+    "domain": "数学基础",
+    "difficulty": 3,
+    "description": "数学基础·进阶知识点：凸集与凸函数"
+  },
+  {
+    "kp_id": "KP-07-28",
+    "name": "协方差与相关系数",
+    "domain": "数学基础",
+    "difficulty": 3,
+    "description": "数学基础·进阶知识点：协方差与相关系数"
+  },
+  {
+    "kp_id": "KP-07-29",
+    "name": "参数估计与极大似然",
+    "domain": "数学基础",
+    "difficulty": 3,
+    "description": "数学基础·进阶知识点：参数估计与极大似然"
+  },
+  {
+    "kp_id": "KP-07-30",
+    "name": "回归分析数学基础",
+    "domain": "数学基础",
+    "difficulty": 3,
+    "description": "数学基础·进阶知识点：回归分析数学基础"
+  },
+  {
+    "kp_id": "KP-07-31",
+    "name": "大数定律与中心极限定理",
+    "domain": "数学基础",
+    "difficulty": 3,
+    "description": "数学基础·进阶知识点：大数定律与中心极限定理"
+  },
+  {
+    "kp_id": "KP-07-32",
+    "name": "拉格朗日乘子法",
+    "domain": "数学基础",
+    "difficulty": 3,
+    "description": "数学基础·进阶知识点：拉格朗日乘子法"
+  },
+  {
+    "kp_id": "KP-07-33",
+    "name": "数值积分与误差",
+    "domain": "数学基础",
+    "difficulty": 3,
+    "description": "数学基础·进阶知识点：数值积分与误差"
+  },
+  {
+    "kp_id": "KP-07-34",
+    "name": "梯度下降法",
+    "domain": "数学基础",
+    "difficulty": 3,
+    "description": "数学基础·进阶知识点：梯度下降法"
+  },
+  {
+    "kp_id": "KP-07-35",
+    "name": "牛顿法与拟牛顿法",
+    "domain": "数学基础",
+    "difficulty": 3,
+    "description": "数学基础·进阶知识点：牛顿法与拟牛顿法"
+  },
+  {
+    "kp_id": "KP-07-36",
+    "name": "矩阵分解 SVD",
+    "domain": "数学基础",
+    "difficulty": 3,
+    "description": "数学基础·进阶知识点：矩阵分解 SVD"
+  },
+  {
+    "kp_id": "KP-07-37",
+    "name": "信息论与熵",
+    "domain": "数学基础",
+    "difficulty": 4,
+    "description": "数学基础·高级知识点：信息论与熵"
+  },
+  {
+    "kp_id": "KP-07-38",
+    "name": "傅里叶变换基础",
+    "domain": "数学基础",
+    "difficulty": 4,
+    "description": "数学基础·高级知识点：傅里叶变换基础"
+  },
+  {
+    "kp_id": "KP-07-39",
+    "name": "变分法初步",
+    "domain": "数学基础",
+    "difficulty": 4,
+    "description": "数学基础·高级知识点：变分法初步"
+  },
+  {
+    "kp_id": "KP-07-40",
+    "name": "常微分方程建模",
+    "domain": "数学基础",
+    "difficulty": 4,
+    "description": "数学基础·高级知识点：常微分方程建模"
+  },
+  {
+    "kp_id": "KP-07-41",
+    "name": "数值稳定性分析",
+    "domain": "数学基础",
+    "difficulty": 4,
+    "description": "数学基础·高级知识点：数值稳定性分析"
+  },
+  {
+    "kp_id": "KP-07-42",
+    "name": "最优化理论与对偶",
+    "domain": "数学基础",
+    "difficulty": 4,
+    "description": "数学基础·高级知识点：最优化理论与对偶"
+  },
+  {
+    "kp_id": "KP-07-43",
+    "name": "概率图模型基础",
+    "domain": "数学基础",
+    "difficulty": 4,
+    "description": "数学基础·高级知识点：概率图模型基础"
+  },
+  {
+    "kp_id": "KP-07-44",
+    "name": "稀疏表示与压缩感知",
+    "domain": "数学基础",
+    "difficulty": 4,
+    "description": "数学基础·高级知识点：稀疏表示与压缩感知"
+  },
+  {
+    "kp_id": "KP-07-45",
+    "name": "约束优化 KKT 条件",
+    "domain": "数学基础",
+    "difficulty": 4,
+    "description": "数学基础·高级知识点：约束优化 KKT 条件"
+  },
+  {
+    "kp_id": "KP-07-46",
+    "name": "蒙特卡洛方法",
+    "domain": "数学基础",
+    "difficulty": 4,
+    "description": "数学基础·高级知识点：蒙特卡洛方法"
+  },
+  {
+    "kp_id": "KP-07-47",
+    "name": "随机过程初步",
+    "domain": "数学基础",
+    "difficulty": 4,
+    "description": "数学基础·高级知识点：随机过程初步"
+  },
+  {
+    "kp_id": "KP-07-48",
+    "name": "马尔可夫链",
+    "domain": "数学基础",
+    "difficulty": 4,
+    "description": "数学基础·高级知识点：马尔可夫链"
+  },
+  {
+    "kp_id": "KP-07-49",
+    "name": "凸优化内点法",
+    "domain": "数学基础",
+    "difficulty": 5,
+    "description": "数学基础·专家级知识点：凸优化内点法"
+  },
+  {
+    "kp_id": "KP-07-50",
+    "name": "变分推断与贝叶斯计算",
+    "domain": "数学基础",
+    "difficulty": 5,
+    "description": "数学基础·专家级知识点：变分推断与贝叶斯计算"
+  },
+  {
+    "kp_id": "KP-07-51",
+    "name": "大规模数值线性代数",
+    "domain": "数学基础",
+    "difficulty": 5,
+    "description": "数学基础·专家级知识点：大规模数值线性代数"
+  },
+  {
+    "kp_id": "KP-07-52",
+    "name": "拓扑与流形初步",
+    "domain": "数学基础",
+    "difficulty": 5,
+    "description": "数学基础·专家级知识点：拓扑与流形初步"
+  },
+  {
+    "kp_id": "KP-07-53",
+    "name": "数学建模与证明方法",
+    "domain": "数学基础",
+    "difficulty": 5,
+    "description": "数学基础·专家级知识点：数学建模与证明方法"
+  },
+  {
+    "kp_id": "KP-07-54",
+    "name": "泛函分析初步",
+    "domain": "数学基础",
+    "difficulty": 5,
+    "description": "数学基础·专家级知识点：泛函分析初步"
+  },
+  {
+    "kp_id": "KP-07-55",
+    "name": "测度论与概率公理",
+    "domain": "数学基础",
+    "difficulty": 5,
+    "description": "数学基础·专家级知识点：测度论与概率公理"
+  },
+  {
+    "kp_id": "KP-07-56",
+    "name": "算子理论与谱方法",
+    "domain": "数学基础",
+    "difficulty": 5,
+    "description": "数学基础·专家级知识点：算子理论与谱方法"
+  },
+  {
+    "kp_id": "KP-07-57",
+    "name": "统计学习理论",
+    "domain": "数学基础",
+    "difficulty": 5,
+    "description": "数学基础·专家级知识点：统计学习理论"
+  },
+  {
+    "kp_id": "KP-07-58",
+    "name": "随机微分方程",
+    "domain": "数学基础",
+    "difficulty": 5,
+    "description": "数学基础·专家级知识点：随机微分方程"
+  },
+  {
+    "kp_id": "KP-07-59",
+    "name": "随机矩阵理论",
+    "domain": "数学基础",
+    "difficulty": 5,
+    "description": "数学基础·专家级知识点：随机矩阵理论"
+  },
+  {
+    "kp_id": "KP-07-60",
+    "name": "高维概率与集中不等式",
+    "domain": "数学基础",
+    "difficulty": 5,
+    "description": "数学基础·专家级知识点：高维概率与集中不等式"
+  }
+]

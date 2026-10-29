@@ -1,0 +1,196 @@
+{
+  "name": "learnpath-synthetic",
+  "version": "1.0.0",
+  "generator": "learnpath.data.generator.generate_dataset",
+  "seed": 20261029,
+  "scale": {
+    "n_knowledge_points": 420,
+    "n_courses": 560,
+    "n_learners": 720,
+    "n_interactions": 14000,
+    "seed": 20261029
+  },
+  "stats": {
+    "n_knowledge_points": 420,
+    "n_kp_edges": 483,
+    "n_courses": 560,
+    "n_learners": 720,
+    "n_goals": 8,
+    "n_interactions": 14000,
+    "n_completed": 6862,
+    "completion_rate": 0.4901,
+    "domains": [
+      "产品与职场",
+      "前端与设计",
+      "数学基础",
+      "数据与人工智能",
+      "编程开发",
+      "网络与安全",
+      "语言学习"
+    ]
+  },
+  "graph": {
+    "n_nodes": 420,
+    "n_edges": 483,
+    "n_roots": 28,
+    "n_leaves": 56,
+    "max_depth": 8,
+    "avg_out_degree": 1.15,
+    "domains": [
+      "产品与职场",
+      "前端与设计",
+      "数学基础",
+      "数据与人工智能",
+      "编程开发",
+      "网络与安全",
+      "语言学习"
+    ]
+  },
+  "domains": [
+    {
+      "domain": "编程开发",
+      "n_kps": 60,
+      "n_courses": 80,
+      "n_learners": 144
+    },
+    {
+      "domain": "数据与人工智能",
+      "n_kps": 60,
+      "n_courses": 80,
+      "n_learners": 222
+    },
+    {
+      "domain": "前端与设计",
+      "n_kps": 60,
+      "n_courses": 80,
+      "n_learners": 141
+    },
+    {
+      "domain": "网络与安全",
+      "n_kps": 60,
+      "n_courses": 80,
+      "n_learners": 142
+    },
+    {
+      "domain": "产品与职场",
+      "n_kps": 60,
+      "n_courses": 80,
+      "n_learners": 146
+    },
+    {
+      "domain": "语言学习",
+      "n_kps": 60,
+      "n_courses": 80,
+      "n_learners": 136
+    },
+    {
+      "domain": "数学基础",
+      "n_kps": 60,
+      "n_courses": 80,
+      "n_learners": 150
+    }
+  ],
+  "goal_closures": {
+    "goal_da": {
+      "n_target_kps": 12,
+      "closure_size": 46,
+      "closure_ratio": 3.833
+    },
+    "goal_fe": {
+      "n_target_kps": 12,
+      "closure_size": 43,
+      "closure_ratio": 3.583
+    },
+    "goal_be": {
+      "n_target_kps": 13,
+      "closure_size": 57,
+      "closure_ratio": 4.385
+    },
+    "goal_ml": {
+      "n_target_kps": 14,
+      "closure_size": 63,
+      "closure_ratio": 4.5
+    },
+    "goal_pm": {
+      "n_target_kps": 11,
+      "closure_size": 52,
+      "closure_ratio": 4.727
+    },
+    "goal_sec": {
+      "n_target_kps": 12,
+      "closure_size": 53,
+      "closure_ratio": 4.417
+    },
+    "goal_biz": {
+      "n_target_kps": 9,
+      "closure_size": 36,
+      "closure_ratio": 4.0
+    },
+    "goal_math": {
+      "n_target_kps": 10,
+      "closure_size": 34,
+      "closure_ratio": 3.4
+    }
+  },
+  "completion_model": {
+    "task": "course_completion",
+    "model": "逻辑回归（numpy IRLS + L2）",
+    "n_samples": 14000,
+    "n_train": 9800,
+    "n_test": 4200,
+    "positive_rate": 0.4901,
+    "auc_test": 0.8228,
+    "auc_train": 0.8096,
+    "feature_importance": {
+      "learner_ability": 0.1291,
+      "level_gap": 0.1635,
+      "log_duration": 0.0927,
+      "log_time_budget": 0.0791,
+      "prereq_readiness": 0.2199,
+      "modality_match": 0.1245,
+      "course_quality": 0.1265,
+      "theory_fit": 0.0646
+    },
+    "features": [
+      "learner_ability",
+      "level_gap",
+      "log_duration",
+      "log_time_budget",
+      "prereq_readiness",
+      "modality_match",
+      "course_quality",
+      "theory_fit"
+    ],
+    "note": "完成标签由逻辑斯蒂模型抽样生成，AUC 落在 0.78~0.88 说明信号可学但不过分干净"
+  },
+  "mechanism": {
+    "kp_layering": "领域内 4 个起点 + layer 1..7 均匀铺开，父节点至少 1 个子节点",
+    "cross_domain_edges": "按领域级拓扑序（数学 → 编程 → 数据/语言 → 前端/网络 → 产品）添加",
+    "course_coverage": "每个知识点至少 1 门主课（权重 1.0），其余为 1~3 辅知识点综合课",
+    "goal_targets": "按领域权重分配名额（主领域 70~80%）+ 先修深度区间 + 关键词白/黑名单，再沿互不相同的先修分支从最深端轮转取样；目标闭包 ≥ 目标集合 1.8 倍",
+    "initial_mastery": "仅覆盖目标闭包内 difficulty≤2 的知识点，覆盖率 15%~45%",
+    "completion_model": "逻辑斯蒂：能力 + 等级差 + 时长 + 时间预算 + 先修就绪度 + 模态匹配 + 质量 + 理论偏好",
+    "latent_sigma": 1.45,
+    "logit_weights": {
+      "learner_ability": 0.5,
+      "level_gap": -0.42,
+      "log_duration": -0.3,
+      "log_time_budget": 0.22,
+      "prereq_readiness": 0.55,
+      "modality_match": 0.3,
+      "course_quality": 0.42,
+      "theory_fit": 0.22
+    }
+  },
+  "measurements": {
+    "completion_rate": 0.4901,
+    "avg_initial_mastery_points": 8.55,
+    "quiz_score_mean": 0.6732,
+    "rating_coverage": 0.3227
+  },
+  "notes": [
+    "所有数据均为程序化合成，不含任何真实个人信息",
+    "同一 seed 可完全复现；生成过程不使用网络与系统时间",
+    "completion_model.auc_test 由 numpy 逻辑回归在固定 70/30 划分上测得"
+  ]
+}
