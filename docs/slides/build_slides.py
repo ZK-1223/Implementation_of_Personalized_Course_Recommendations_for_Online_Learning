@@ -518,7 +518,8 @@ def slide_recommend(prs, d, page):
             "c* = argmax [ λ·score(c) − (1−λ)·max sim(c, c′) ]，λ = 0.75",
             11.5, True, C_BLUE)
     textbox(slide, Inches(1.14), Inches(5.34), Inches(5.8), Inches(0.56),
-            "避免「10 门都是 Python 入门课」；消融实验显示移除 MMR 后 NDCG 也会下降。",
+            "避免「10 门都是 Python 入门课」；消融实验显示移除 MMR 后 NDCG 略升 0.0058，"
+            "但 Diversity 从 0.969 掉到 0.904 —— 这是主动的取舍。",
             10.5, False, C_INK2)
 
     picture_fit(slide, FIG / "shot_recommend.png", Inches(7.34), Inches(1.80), Inches(5.42), Inches(4.24),

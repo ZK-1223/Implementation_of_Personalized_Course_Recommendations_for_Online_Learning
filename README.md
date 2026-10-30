@@ -429,7 +429,8 @@ Top-5 特征重要性：`hist_completion_rate` 0.255、`learner_ability` 0.200�
 |---|---|
 | 课程设计报告（Word，**直接填进老师模板**） | [docs/report/](docs/report/) |
 | 工程答辩 PPT | [docs/slides/](docs/slides/) |
-| 报告/PPT 的可复现生成脚本 | [docs/report/build_report.py](docs/report/build_report.py) · [docs/slides/build_slides.py](docs/slides/build_slides.py) |
+| 讲解视频讲稿（约 5 分钟，照着念即可） | [docs/slides/讲解视频讲稿.docx](docs/slides/讲解视频讲稿.docx) |
+| 报告/PPT/讲稿的可复现生成脚本 | [build_report.py](docs/report/build_report.py) · [build_slides.py](docs/slides/build_slides.py) · [build_narration.py](docs/slides/build_narration.py) |
 | 实现要求对照表 | [docs/REQUIREMENTS_MATRIX.md](docs/REQUIREMENTS_MATRIX.md) |
 | 接口契约 | [docs/API.md](docs/API.md) |
 | 系统架构说明 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) |
